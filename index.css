@@ -1,0 +1,78 @@
+body {
+    background-image: url("image/background4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: content-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.highlight {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+a:link {
+    color: purple;
+}
+
+a:visited {
+    color: #db3c28;
+}
+
+a:hover,
+a:focus {
+    color: teal;
+}
+
+a:active {
+    color: blue;
+}
+
+
+.image3 {
+    width: 25%;
+    border: 0.5rem solid rgba(240, 107, 135, 0.9);
+}
+
+.image2 {
+    width: 20%;
+    border: 0.5rem solid rgba(132, 170, 240, 0.9);
+}
+
+img {
+    margin: 1%;
+}
+
+.headerlogo {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 6%;
+}
+
+;
+
+nav {
+    padding: 2%;
+    margin: 1%
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: pink;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+}

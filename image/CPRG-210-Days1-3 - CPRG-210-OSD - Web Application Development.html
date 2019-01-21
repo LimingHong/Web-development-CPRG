@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://learn.sait.ca/d2l/le/content/285490/viewContent/7199020/View -->
+<html lang="en-CA" data-lang-default="en-CA" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[0]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;M/d/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-timezone="{&quot;name&quot;:&quot;Canada - Edmonton&quot;,&quot;identifier&quot;:&quot;America/Edmonton&quot;}" data-app-version="10.8.9" dir="ltr" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#e32525&quot;}"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- Shady DOM styles for custom-style --><!-- Shady DOM styles for dom-template --><!-- Shady DOM styles for dom-repeat --><!-- Shady DOM styles for array-selector --><!-- Shady DOM styles for dom-if --><!-- Shady DOM styles for iron-meta --><!-- Shady DOM styles for d2l-icon --><style scope="d2l-icon-0">.d2l-icon-0 {
+  -ms-flex-align:center;-webkit-align-items:center;align-items:center;color:#565a5c;display:-ms-inline-flexbox;display:-webkit-inline-flex;display:inline-flex;fill:currentcolor;height:18px;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;stroke:none;vertical-align:middle;width:18px;
+}
+
+.d2l-icon-0[icon*="d2l-tier2:"] {
+  height:24px;width:24px;
+}
+
+.d2l-icon-0[icon*="d2l-tier3:"] {
+  height:30px;width:30px;
+}
+
+.d2l-icon-0[hidden] {
+  display:none;
+}</style><!-- Shady DOM styles for iron-iconset-svg --><!-- Shady DOM styles for d2l-button-icon --><style scope="d2l-button-icon-0">.d2l-button-icon-0[d2l-visible-on-ancestor-init] {
+  visibility:hidden;
+}
+
+.d2l-button-icon-0[d2l-visible-on-ancestor-transition] {
+  transition:transform 200ms ease-out, opacity 200ms ease-out !important;
+}
+
+.d2l-button-icon-0[d2l-visible-on-ancestor-hide] {
+  opacity:0 !important;transform:translateY(-10px) !important;
+}
+
+@media only screen and (hover: none), only screen and (-moz-touch-enabled: 1) {
+.d2l-button-icon-0[d2l-visible-on-ancestor-hide] {
+  opacity:1 !important;transform:translateY(0px) !important;
+}
+
+.d2l-button-icon-0[d2l-visible-on-ancestor-hide][d2l-visible-on-ancestor-no-hover-hide] {
+  opacity:0 !important;transform:translateY(-10px) !important;
+}
+
+}
+
+.d2l-button-icon-0 {
+  display:inline-block;
+}
+
+.d2l-button-icon-0[hidden] {
+  display:none;
+}
+
+.d2l-button-icon-0 button.d2l-button-icon {
+  background-color:transparent;border-color:transparent;font-family:inherit;box-shadow:0 0 0 4px rgba(0, 0, 0, 0);border-radius:0.3rem;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;display:inline-block;margin:0;min-height:calc(2rem + 2px);outline:none;text-align:center;transition:box-shadow 0.2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;white-space:nowrap;width:auto;border-radius:0.3rem;min-height:calc(2rem + 2px);min-width:calc(2rem + 2px);position:relative;
+}
+
+.d2l-button-icon-0[h-align="text"] button.d2l-button-icon {
+  left:calc(((2rem + 2px - 0.9rem) / 2) * -1);
+}
+
+[dir="rtl"] .d2l-button-icon-0[h-align="text"] button.d2l-button-icon, .d2l-button-icon-0[dir="rtl"][h-align="text"] button.d2l-button-icon {
+  left:0;right:calc(((2rem + 2px - 0.9rem) / 2) * -1);
+}
+
+[dir="rtl"] .d2l-button-icon-0:host([h-align="text"]) button.d2l-button-icon, .d2l-button-icon-0[dir="rtl"]:host([h-align="text"]) button.d2l-button-icon {
+  left:0;right:calc(((2rem + 2px - 0.9rem) / 2) * -1);
+}
+
+[dir="rtl"] .d2l-button-icon-0[h-align="text"] button.d2l-button-icon, .d2l-button-icon-0[dir="rtl"][h-align="text"] button.d2l-button-icon,.d2l-button-icon-0 [dir="rtl"] [h-align="text"] button.d2l-button-icon {
+  left:0;right:calc(((2rem + 2px - 0.9rem) / 2) * -1);
+}
+
+:host([dir="rtl"] .d2l-button-icon-0[h-align="text"]) button.d2l-button-icon, :host(.d2l-button-icon-0[dir="rtl"][h-align="text"]) button.d2l-button-icon {
+  left:0;right:calc(((2rem + 2px - 0.9rem) / 2) * -1);
+}
+
+.d2l-button-icon-0 button.d2l-button-icon::-moz-focus-inner {
+  border:0;
+}
+
+.d2l-button-icon-0 button[disabled].d2l-button-icon:hover,.d2l-button-icon-0 button[disabled].d2l-button-icon:focus,.d2l-button-icon-0[active] button[disabled].d2l-button-icon {
+  background-color:transparent;
+}
+
+.d2l-button-icon-0 button.d2l-button-icon:hover,.d2l-button-icon-0 button.d2l-button-icon:focus,.d2l-button-icon-0[active] button.d2l-button-icon,.d2l-button-icon-0.d2l-button-icon-hover button.d2l-button-icon,.d2l-button-icon-0.d2l-button-icon-focus button.d2l-button-icon {
+  background-color:#e6eaf0;
+}
+
+.d2l-button-icon-0 button.d2l-button-icon:focus,.d2l-button-icon-0.d2l-button-icon-focus button.d2l-button-icon {
+  border-color:rgba(0, 111, 191, 0.4);box-shadow:0 0 0 4px rgba(0, 111, 191, 0.3);
+}
+
+.d2l-button-icon-0 .d2l-button-icon.d2l-button-icon {
+  height:0.9rem;width:0.9rem;
+}
+
+.d2l-button-icon-0[translucent] button.d2l-button-icon {
+  background-color:rgba(0,0,0,0.5);transition:background-color 0.5s;
+}
+
+.d2l-button-icon-0[translucent] .d2l-button-icon.d2l-button-icon {
+  color:white;
+}
+
+.d2l-button-icon-0[active][translucent] button.d2l-button-icon,.d2l-button-icon-0[translucent].d2l-button-icon-hover button.d2l-button-icon,.d2l-button-icon-0[translucent].d2l-button-icon-focus button.d2l-button-icon,.d2l-button-icon-0[translucent] button.d2l-button-icon:hover,.d2l-button-icon-0[translucent] button.d2l-button-icon:focus {
+  border:none;background-color:#006fbf;box-shadow:none;
+}
+
+.d2l-button-icon-0 button[disabled].d2l-button-icon {
+  cursor:default;opacity:0.5;
+}</style><!-- Shady DOM styles for d2l-button-subtle --><!-- Shady DOM styles for iron-request --><!-- Shady DOM styles for iron-ajax --><!-- Shady DOM styles for d2l-alert --><!-- Shady DOM styles for d2l-link --><!-- Shady DOM styles for iron-media-query --><!-- Shady DOM styles for d2l-menu-item --><style scope="d2l-menu-item">d2l-menu-item {
+  background-color:#ffffff;box-sizing:border-box;cursor:pointer;display:block;font-size:0.8rem;outline:none;width:100%;
+}
+
+d2l-menu-item[disabled],d2l-menu-item[disabled]:hover,d2l-menu-item[disabled]:focus {
+  cursor:default;opacity:0.75;
+}
+
+d2l-menu-item[hidden] {
+  display:none;
+}
+
+d2l-menu-item {
+  display:flex;padding:0.75rem 1rem;
+}
+
+d2l-menu-item > span.d2l-menu-item {
+  flex:auto;line-height:1rem;overflow-x:hidden;overflow-y:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+
+d2l-menu-item > d2l-icon.d2l-menu-item {
+  flex:none;margin-top:0.1rem;
+}</style><!-- Shady DOM styles for d2l-menu-item-separator --><style scope="d2l-menu-item-separator">d2l-menu-item-separator {
+  display:block;
+}</style><!-- Shady DOM styles for d2l-menu-item-return --><style scope="d2l-menu-item-return">d2l-menu-item-return {
+  background-color:#ffffff;box-sizing:border-box;cursor:pointer;display:block;font-size:0.8rem;outline:none;width:100%;
+}
+
+d2l-menu-item-return[disabled],d2l-menu-item-return[disabled]:hover,d2l-menu-item-return[disabled]:focus {
+  cursor:default;opacity:0.75;
+}
+
+d2l-menu-item-return[hidden] {
+  display:none;
+}
+
+d2l-menu-item-return {
+  display:flex;padding:0.75rem 1rem;
+}
+
+d2l-menu-item-return > span.d2l-menu-item-return {
+  flex:auto;line-height:1rem;overflow-x:hidden;overflow-y:hidden;text-decoration:none;text-overflow:ellipsis;white-space:nowrap;
+}
+
+d2l-menu-item-return > d2l-icon.d2l-menu-item-return {
+  flex:none;margin-right:1rem;margin-top:0.1rem;
+}
+
+[dir="rtl"] d2l-menu-item-return > d2l-icon.d2l-menu-item-return, d2l-menu-item-return[dir="rtl"] > d2l-icon.d2l-menu-item-return {
+  margin-right:0;margin-left:1rem;
+}
+
+[dir="rtl"] d2l-menu-item-return > d2l-icon.d2l-menu-item-return, d2l-menu-item-return[dir="rtl"] > d2l-icon.d2l-menu-item-return,d2l-menu-item-return [dir="rtl"]  > d2l-icon.d2l-menu-item-return {
+  margin-right:0;margin-left:1rem;
+}</style><!-- Shady DOM styles for d2l-menu --><style scope="d2l-menu-0">.d2l-menu-0 {
+  box-sizing:border-box;display:inline-block;position:relative;left:0;overflow:hidden;width:100%;-webkit-transition:height 300ms linear;transition:height 300ms linear;
+}
+
+.d2l-menu-0[child-view] {
+  display:none;position:absolute;top:0;left:100%;
+}
+
+.d2l-menu-0[shown] {
+  display:inline-block;
+}
+
+.d2l-menu-0 .d2l-hierarchical-view-content.d2l-child-view-show.d2l-menu {
+  -webkit-animation:show-child-view-animation-d2l-menu-0 forwards 300ms linear;animation:show-child-view-animation-d2l-menu-0 300ms forwards linear;
+}
+
+.d2l-menu-0 .d2l-hierarchical-view-content.d2l-child-view-hide.d2l-menu {
+  -webkit-animation:hide-child-view-animation-d2l-menu-0 forwards 300ms linear;animation:hide-child-view-animation-d2l-menu-0 300ms forwards linear;
+}
+
+@keyframes show-child-view-animation-d2l-menu-0 {
+0% {
+  transform:translate(0,0);
+}
+
+100% {
+  transform:translate(-100%,0);
+}
+
+}
+
+@-webkit-keyframes show-child-view-animation-d2l-menu-0 {
+0% {
+  -webkit-transform:translate(0,0);
+}
+
+100% {
+  -webkit-transform:translate(-100%,0);
+}
+
+}
+
+@keyframes hide-child-view-animation-d2l-menu-0 {
+0% {
+  transform:translate(-100%,0);
+}
+
+100% {
+  transform:translate(0,0);
+}
+
+}
+
+@-webkit-keyframes hide-child-view-animation-d2l-menu-0 {
+0% {
+  -webkit-transform:translate(-100%,0);
+}
+
+100% {
+  -webkit-transform:translate(0,0);
+}
+
+}
+
+.d2l-menu-0 {
+  box-sizing:border-box;display:block;width:100%;padding-top:1px;
+}
+
+.d2l-menu-0[active] .d2l-menu-items.d2l-menu d2l-menu-item-return[role="menuitem"].d2l-menu,.d2l-menu-0[active] .d2l-menu-items.d2l-menu > [role="menuitem"],.d2l-menu-0[active] .d2l-menu-items.d2l-menu > [role="menuitemcheckbox"],.d2l-menu-0[active] .d2l-menu-items.d2l-menu > [role="menuitemradio"] {
+  position:relative;
+}
+
+.d2l-menu-0 .d2l-menu-items.d2l-menu d2l-menu-item-return[role="menuitem"].d2l-menu,.d2l-menu-0 .d2l-menu-items.d2l-menu > [role="menuitem"],.d2l-menu-0 .d2l-menu-items.d2l-menu > [role="menuitemcheckbox"],.d2l-menu-0 .d2l-menu-items.d2l-menu > [role="menuitemradio"] {
+  margin-top:-1px;border:1px solid transparent;border-top-color:#e6eaf0;color:#565a5c;
+}
+
+.d2l-menu-0 .d2l-menu-items.d2l-menu d2l-menu-item-return[role="menuitem"].d2l-menu,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-first[role="menuitem"],.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-first[role="menuitemcheckbox"],.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-first[role="menuitemradio"] {
+  border-top-color:transparent;
+}
+
+.d2l-menu-0 .d2l-menu-items.d2l-menu d2l-menu-item-return[role="menuitem"].d2l-menu:focus,.d2l-menu-0 .d2l-menu-items.d2l-menu d2l-menu-item-return[role="menuitem"].d2l-menu:hover,.d2l-menu-0 .d2l-menu-items.d2l-menu > [role="menuitem"]:focus,.d2l-menu-0 .d2l-menu-items.d2l-menu > [role="menuitem"]:hover,.d2l-menu-0 .d2l-menu-items.d2l-menu > [role="menuitemcheckbox"]:focus,.d2l-menu-0 .d2l-menu-items.d2l-menu > [role="menuitemcheckbox"]:hover,.d2l-menu-0 .d2l-menu-items.d2l-menu > [role="menuitemradio"]:focus,.d2l-menu-0 .d2l-menu-items.d2l-menu > [role="menuitemradio"]:hover,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-first[role="menuitem"]:focus,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-first[role="menuitem"]:hover,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-first[role="menuitemcheckbox"]:focus,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-first[role="menuitemcheckbox"]:hover,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-first[role="menuitemradio"]:focus,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-first[role="menuitemradio"]:hover {
+  z-index:2;background-color:#e8f2f9;border-top:1px solid #29a6ff;border-bottom:1px solid #29a6ff;color:#006fbf;
+}
+
+.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-last[role="menuitem"]:focus,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-last[role="menuitem"]:hover,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-last[role="menuitemcheckbox"]:focus,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-last[role="menuitemcheckbox"]:hover,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-last[role="menuitemradio"]:focus,.d2l-menu-0 .d2l-menu-items.d2l-menu > .d2l-menu-item-last[role="menuitemradio"]:hover {
+  border-bottom-color:#29a6ff;
+}
+
+.d2l-menu-0 .d2l-menu-items.d2l-menu > d2l-menu-item-separator {
+  position:relative;z-index:1;margin-top:-1px;border-top:1px solid #b9c2d0;
+}</style><!-- Shady DOM styles for d2l-dropdown-menu --><style scope="d2l-dropdown-menu-0">.d2l-dropdown-menu-0 {
+  box-sizing:border-box;color:#565a5c;display:none;left:0;position:absolute;text-align:left;top:calc(100% + 20px);width:100%;z-index:1000;
+}
+
+.d2l-dropdown-menu-0[opened] {
+  display:inline-block;
+}
+
+.d2l-dropdown-menu-0[opened] {
+  -webkit-animation:d2l-dropdown-animation-d2l-dropdown-menu-0 300ms ease;animation:d2l-dropdown-animation-d2l-dropdown-menu-0 300ms ease;
+}
+
+.d2l-dropdown-menu-0[opened-above] {
+  bottom:calc(100% + 20px);top:auto;-webkit-animation:d2l-dropdown-above-animation-d2l-dropdown-menu-0 300ms ease;animation:d2l-dropdown-above-animation-d2l-dropdown-menu-0 300ms ease;
+}
+
+.d2l-dropdown-menu-0 .d2l-dropdown-content-pointer.d2l-dropdown-menu {
+  position:absolute;display:inline-block;clip:rect(-5px, 21px, 8px, -3px);top:-7px;left:calc(50% - 7px);z-index:1;
+}
+
+.d2l-dropdown-menu-0 .d2l-dropdown-content-pointer.d2l-dropdown-menu > div.d2l-dropdown-menu {
+  background-color:#ffffff;border:1px solid #d3d9e3;border-radius:0.1rem;box-shadow:-4px -4px 12px -5px rgba(86, 90, 92, .2);height:16px;width:16px;transform:rotate(45deg);-webkit-transform:rotate(45deg);
+}
+
+.d2l-dropdown-menu-0[opened-above] .d2l-dropdown-content-pointer.d2l-dropdown-menu {
+  top:auto;clip:rect(9px, 21px, 22px, -3px);bottom:-8px;
+}
+
+.d2l-dropdown-menu-0[opened-above] .d2l-dropdown-content-pointer.d2l-dropdown-menu > div.d2l-dropdown-menu {
+  box-shadow:4px 4px 12px -5px rgba(86, 90, 92, .2);
+}
+
+.d2l-dropdown-menu-0[no-pointer] .d2l-dropdown-content-pointer.d2l-dropdown-menu {
+  display:none;
+}
+
+.d2l-dropdown-menu-0 .d2l-dropdown-content-position.d2l-dropdown-menu {
+  border-radius:0.3rem;display:inline-block;position:absolute;
+}
+
+.d2l-dropdown-menu-0 .d2l-dropdown-content-width.d2l-dropdown-menu {
+  background-color:#ffffff;border:1px solid #d3d9e3;border-radius:0.3rem;box-shadow:0 2px 12px 0 rgba(0, 0, 0, 0.15);box-sizing:border-box;min-width:70px;max-width:370px;position:absolute;width:100vw;
+}
+
+.d2l-dropdown-menu-0[opened-above] .d2l-dropdown-content-width.d2l-dropdown-menu {
+  bottom:100%;
+}
+
+.d2l-dropdown-menu-0 .d2l-dropdown-content-container.d2l-dropdown-menu {
+  box-sizing:border-box;display:inline-block;max-width:100%;outline:none;padding:1rem;
+}
+
+.d2l-dropdown-menu-0[no-padding] .d2l-dropdown-content-container.d2l-dropdown-menu {
+  padding:0;
+}
+
+.d2l-dropdown-menu-0 .d2l-dropdown-content-top.d2l-dropdown-menu,.d2l-dropdown-menu-0 .d2l-dropdown-content-bottom.d2l-dropdown-menu {
+  height:5px;position:relative;z-index:1;
+}
+
+.d2l-dropdown-menu-0 .d2l-dropdown-content-top.d2l-dropdown-menu {
+  border-top-left-radius:0.3rem;border-top-right-radius:0.3rem;
+}
+
+.d2l-dropdown-menu-0 .d2l-dropdown-content-bottom.d2l-dropdown-menu {
+  border-bottom-left-radius:0.3rem;border-bottom-right-radius:0.3rem;
+}
+
+.d2l-dropdown-menu-0 .d2l-dropdown-content-top-scroll.d2l-dropdown-menu {
+  box-shadow:0 3px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.d2l-dropdown-menu-0 .d2l-dropdown-content-bottom-scroll.d2l-dropdown-menu {
+  box-shadow:0 -3px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+[dir="rtl"] .d2l-dropdown-menu-0, .d2l-dropdown-menu-0[dir="rtl"] {
+  left:auto;right:0;text-align:right;
+}
+
+[dir="rtl"] .d2l-dropdown-menu-0, .d2l-dropdown-menu-0[dir="rtl"] {
+  left:auto;right:0;text-align:right;
+}
+
+@keyframes d2l-dropdown-animation-d2l-dropdown-menu-0 {
+0% {
+  transform:translate(0,-10px);opacity:0;
+}
+
+100% {
+  transform:translate(0,0);opacity:1;
+}
+
+}
+
+@keyframes d2l-dropdown-above-animation-d2l-dropdown-menu-0 {
+0% {
+  transform:translate(0,10px);opacity:0;
+}
+
+100% {
+  transform:translate(0,0);opacity:1;
+}
+
+}
+
+@-webkit-keyframes d2l-dropdown-animation-d2l-dropdown-menu-0 {
+0% {
+  -webkit-transform:translate(0,-10px);opacity:0;
+}
+
+100% {
+  -webkit-transform:translate(0,0);opacity:1;
+}
+
+}
+
+@-webkit-keyframes d2l-dropdown-above-animation-d2l-dropdown-menu-0 {
+0% {
+  -webkit-transform:translate(0,10px);opacity:0;
+}
+
+100% {
+  -webkit-transform:translate(0,0);opacity:1;
+}
+
+}</style><!-- Shady DOM styles for d2l-menu-item-link --><style scope="d2l-menu-item-link">d2l-menu-item-link {
+  background-color:#ffffff;box-sizing:border-box;cursor:pointer;display:block;font-size:0.8rem;outline:none;width:100%;
+}
+
+d2l-menu-item-link[disabled],d2l-menu-item-link[disabled]:hover,d2l-menu-item-link[disabled]:focus {
+  cursor:default;opacity:0.75;
+}
+
+d2l-menu-item-link[hidden] {
+  display:none;
+}
+
+d2l-menu-item-link {
+  display:block;padding:0;
+}
+
+d2l-menu-item-link > a.d2l-menu-item-link {
+  color:inherit;display:block;line-height:1rem;outline:none;overflow-x:hidden;padding:0.75rem 1rem;text-decoration:none;text-overflow:ellipsis;white-space:nowrap;
+}</style><!-- Shady DOM styles for d2l-dropdown --><style scope="d2l-dropdown">d2l-dropdown {
+  display:inline-block;outline:none;overflow:visible;position:relative;
+}</style><!-- Shady DOM styles for d2l-dropdown-content --><style scope="d2l-dropdown-content-1">.d2l-dropdown-content-1 {
+  box-sizing:border-box;color:#565a5c;display:none;left:0;position:absolute;text-align:left;top:calc(100% + 0px);width:100%;z-index:1000;
+}
+
+.d2l-dropdown-content-1[opened] {
+  display:inline-block;
+}
+
+.d2l-dropdown-content-1[opened] {
+  -webkit-animation:d2l-dropdown-animation-d2l-dropdown-content-1 300ms ease;animation:d2l-dropdown-animation-d2l-dropdown-content-1 300ms ease;
+}
+
+.d2l-dropdown-content-1[opened-above] {
+  bottom:calc(100% + 0px);top:auto;-webkit-animation:d2l-dropdown-above-animation-d2l-dropdown-content-1 300ms ease;animation:d2l-dropdown-above-animation-d2l-dropdown-content-1 300ms ease;
+}
+
+.d2l-dropdown-content-1 .d2l-dropdown-content-pointer.d2l-dropdown-content {
+  position:absolute;display:inline-block;clip:rect(-5px, 21px, 8px, -3px);top:-7px;left:calc(50% - 7px);z-index:1;
+}
+
+.d2l-dropdown-content-1 .d2l-dropdown-content-pointer.d2l-dropdown-content > div.d2l-dropdown-content {
+  background-color:#ffffff;border:1px solid #d3d9e3;border-radius:0.1rem;box-shadow:-4px -4px 12px -5px rgba(86, 90, 92, .2);height:16px;width:16px;transform:rotate(45deg);-webkit-transform:rotate(45deg);
+}
+
+.d2l-dropdown-content-1[opened-above] .d2l-dropdown-content-pointer.d2l-dropdown-content {
+  top:auto;clip:rect(9px, 21px, 22px, -3px);bottom:-8px;
+}
+
+.d2l-dropdown-content-1[opened-above] .d2l-dropdown-content-pointer.d2l-dropdown-content > div.d2l-dropdown-content {
+  box-shadow:4px 4px 12px -5px rgba(86, 90, 92, .2);
+}
+
+.d2l-dropdown-content-1[no-pointer] .d2l-dropdown-content-pointer.d2l-dropdown-content {
+  display:none;
+}
+
+.d2l-dropdown-content-1 .d2l-dropdown-content-position.d2l-dropdown-content {
+  border-radius:0.3rem;display:inline-block;position:absolute;
+}
+
+.d2l-dropdown-content-1 .d2l-dropdown-content-width.d2l-dropdown-content {
+  background-color:#ffffff;border:1px solid #d3d9e3;border-radius:0.3rem;box-shadow:0 2px 12px 0 rgba(0, 0, 0, 0.15);box-sizing:border-box;min-width:70px;max-width:370px;position:absolute;width:100vw;
+}
+
+.d2l-dropdown-content-1[opened-above] .d2l-dropdown-content-width.d2l-dropdown-content {
+  bottom:100%;
+}
+
+.d2l-dropdown-content-1 .d2l-dropdown-content-container.d2l-dropdown-content {
+  box-sizing:border-box;display:inline-block;max-width:100%;outline:none;padding:1rem;
+}
+
+.d2l-dropdown-content-1[no-padding] .d2l-dropdown-content-container.d2l-dropdown-content {
+  padding:0;
+}
+
+.d2l-dropdown-content-1 .d2l-dropdown-content-top.d2l-dropdown-content,.d2l-dropdown-content-1 .d2l-dropdown-content-bottom.d2l-dropdown-content {
+  height:5px;position:relative;z-index:1;
+}
+
+.d2l-dropdown-content-1 .d2l-dropdown-content-top.d2l-dropdown-content {
+  border-top-left-radius:0.3rem;border-top-right-radius:0.3rem;
+}
+
+.d2l-dropdown-content-1 .d2l-dropdown-content-bottom.d2l-dropdown-content {
+  border-bottom-left-radius:0.3rem;border-bottom-right-radius:0.3rem;
+}
+
+.d2l-dropdown-content-1 .d2l-dropdown-content-top-scroll.d2l-dropdown-content {
+  box-shadow:0 3px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.d2l-dropdown-content-1 .d2l-dropdown-content-bottom-scroll.d2l-dropdown-content {
+  box-shadow:0 -3px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+[dir="rtl"] .d2l-dropdown-content-1, .d2l-dropdown-content-1[dir="rtl"] {
+  left:auto;right:0;text-align:right;
+}
+
+[dir="rtl"] .d2l-dropdown-content-1, .d2l-dropdown-content-1[dir="rtl"] {
+  left:auto;right:0;text-align:right;
+}
+
+@keyframes d2l-dropdown-animation-d2l-dropdown-content-1 {
+0% {
+  transform:translate(0,-10px);opacity:0;
+}
+
+100% {
+  transform:translate(0,0);opacity:1;
+}
+
+}
+
+@keyframes d2l-dropdown-above-animation-d2l-dropdown-content-1 {
+0% {
+  transform:translate(0,10px);opacity:0;
+}
+
+100% {
+  transform:translate(0,0);opacity:1;
+}
+
+}
+
+@-webkit-keyframes d2l-dropdown-animation-d2l-dropdown-content-1 {
+0% {
+  -webkit-transform:translate(0,-10px);opacity:0;
+}
+
+100% {
+  -webkit-transform:translate(0,0);opacity:1;
+}
+
+}
+
+@-webkit-keyframes d2l-dropdown-above-animation-d2l-dropdown-content-1 {
+0% {
+  -webkit-transform:translate(0,10px);opacity:0;
+}
+
+100% {
+  -webkit-transform:translate(0,0);opacity:1;
+}
+
+}</style><!-- Shady DOM styles for d2l-button --><!-- Shady DOM styles for d2l-dropdown-button-subtle --><style scope="d2l-dropdown-button-subtle">d2l-dropdown-button-subtle {
+  display:inline-block;outline:none;overflow:visible;position:relative;
+}</style><!-- Shady DOM styles for d2l-dropdown-more --><style scope="d2l-dropdown-more">d2l-dropdown-more {
+  display:inline-block;outline:none;overflow:visible;position:relative;
+}
+
+d2l-dropdown-more[d2l-visible-on-ancestor-init] {
+  visibility:hidden;
+}
+
+d2l-dropdown-more[d2l-visible-on-ancestor-transition] {
+  transition:transform 200ms ease-out, opacity 200ms ease-out !important;
+}
+
+d2l-dropdown-more[d2l-visible-on-ancestor-hide] {
+  opacity:0 !important;transform:translateY(-10px) !important;
+}
+
+@media only screen and (hover: none), only screen and (-moz-touch-enabled: 1) {
+d2l-dropdown-more[d2l-visible-on-ancestor-hide] {
+  opacity:1 !important;transform:translateY(0px) !important;
+}
+
+d2l-dropdown-more[d2l-visible-on-ancestor-hide][d2l-visible-on-ancestor-no-hover-hide] {
+  opacity:0 !important;transform:translateY(-10px) !important;
+}
+
+}
+
+d2l-dropdown-more {
+  display:inline-block;
+}</style><!-- Shady DOM styles for d2l-loading-spinner --><style scope="d2l-loading-spinner-0">.d2l-loading-spinner-0 {
+  color:#006fbf;display:inline-block;text-align:initial;
+}
+
+.d2l-loading-spinner-0[hidden] {
+  display:none;
+}
+
+.d2l-loading-spinner-0 .d2l-loading-spinner-wrapper.d2l-loading-spinner {
+  height:120px;margin:auto;overflow:hidden;position:relative;width:120px;
+}
+
+.d2l-loading-spinner-0 .d2l-loading-spinner-bg.d2l-loading-spinner,.d2l-loading-spinner-0 .d2l-loading-spinner-bg-blur.d2l-loading-spinner {
+  height:100%;position:absolute;top:0;width:100%;stroke:#006fbf;
+}
+
+.d2l-loading-spinner-0 .d2l-loading-spinner-bg-stroke.d2l-loading-spinner {
+  stroke:#ededfa;
+}
+
+.d2l-loading-spinner-0 .d2l-loading-spinner-bg-blur.d2l-loading-spinner {
+  opacity:0.1;filter:blur(calc(120px / 10));
+}
+
+.d2l-loading-spinner-0 .d2l-loading-spinner-slice1.d2l-loading-spinner,.d2l-loading-spinner-0 .d2l-loading-spinner-slice2.d2l-loading-spinner,.d2l-loading-spinner-0 .d2l-loading-spinner-slice3.d2l-loading-spinner,.d2l-loading-spinner-0 .d2l-loading-spinner-slice4.d2l-loading-spinner,.d2l-loading-spinner-0 .d2l-loading-spinner-slice5.d2l-loading-spinner {
+  animation-duration:1.5s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.5,0,.5,1);height:50%;position:absolute;top:0;transform-origin:left bottom;left:50%;width:50%;
+}
+
+.d2l-loading-spinner-0 .d2l-loading-spinner-slice1.d2l-loading-spinner {
+  animation-name:slicespin1-d2l-loading-spinner-0;transform:rotate(54deg);
+}
+
+.d2l-loading-spinner-0 .d2l-loading-spinner-slice2.d2l-loading-spinner {
+  animation-name:slicespin2-d2l-loading-spinner-0;transform:rotate(124deg);
+}
+
+.d2l-loading-spinner-0 .d2l-loading-spinner-slice3.d2l-loading-spinner {
+  animation-name:slicespin3-d2l-loading-spinner-0;transform:rotate(198deg);
+}
+
+.d2l-loading-spinner-0 .d2l-loading-spinner-slice4.d2l-loading-spinner {
+  animation-name:slicespin4-d2l-loading-spinner-0;transform:rotate(270deg);
+}
+
+.d2l-loading-spinner-0 .d2l-loading-spinner-slice5.d2l-loading-spinner {
+  animation-name:slicespin5-d2l-loading-spinner-0;transform:rotate(344deg);
+}
+
+@keyframes slicespin1-d2l-loading-spinner-0 {
+0% {
+  transform:rotate(54deg);
+}
+
+80%, 100% {
+  transform:rotate(430deg);
+}
+
+}
+
+@keyframes slicespin2-d2l-loading-spinner-0 {
+0%, 10% {
+  transform:rotate(124deg);
+}
+
+80%, 100% {
+  transform:rotate(500deg);
+}
+
+}
+
+@keyframes slicespin3-d2l-loading-spinner-0 {
+0%, 20% {
+  transform:rotate(198deg);
+}
+
+80%, 100% {
+  transform:rotate(574deg);
+}
+
+}
+
+@keyframes slicespin4-d2l-loading-spinner-0 {
+0%, 35% {
+  transform:rotate(270deg);
+}
+
+80%, 100% {
+  transform:rotate(644deg);
+}
+
+}
+
+@keyframes slicespin5-d2l-loading-spinner-0 {
+0%, 60% {
+  transform:rotate(344deg);
+}
+
+80%, 100% {
+  transform:rotate(720deg);
+}
+
+}</style><!-- Shady DOM styles for d2l-save-status --><!-- Shady DOM styles for iron-overlay-backdrop --><!-- Shady DOM styles for d2l-simple-overlay-close-button --><!-- Shady DOM styles for d2l-simple-overlay --><!-- Shady DOM styles for d2l-offscreen --><!-- Shady DOM styles for d2l-tooltip --><!-- Shady DOM styles for s-html --><!-- Shady DOM styles for d2l-input-checkbox --><!-- Shady DOM styles for iron-a11y-announcer --><style scope="iron-a11y-announcer">iron-a11y-announcer {
+  display:inline-block;position:fixed;clip:rect(0px,0px,0px,0px);
+}</style><!-- Shady DOM styles for iron-input --><style scope="iron-input">iron-input {
+  display:inline-block;
+}</style><!-- Shady DOM styles for d2l-search-widget --><!-- Shady DOM styles for d2l-course-image --><style scope="d2l-course-image">.shown.d2l-course-image {
+  opacity:1;
+}
+
+img.d2l-course-image {
+  object-fit:cover;object-position:center;height:100%;width:100%;opacity:0;transition:opacity 0.5s;
+}</style><!-- Shady DOM styles for d2l-image-selector-tile --><!-- Shady DOM styles for d2l-image-tile-grid --><!-- Shady DOM styles for d2l-basic-image-selector --><!-- Shady DOM styles for iron-scroll-threshold --><style scope="iron-scroll-threshold">iron-scroll-threshold {
+  display:block;
+}</style><!-- Shady DOM styles for d2l-card --><!-- Shady DOM styles for d2l-card-content-meta --><!-- Shady DOM styles for d2l-menu-item-radio --><!-- Shady DOM styles for d2l-input-text --><!-- Shady DOM styles for d2l-input-textarea --><!-- Shady DOM styles for d2l-sticky-element --><style scope="d2l-sticky-element">d2l-sticky-element {
+  position:-webkit-sticky;position:sticky;top:0;z-index:4;line-height:0;
+}</style><!-- Shady DOM styles for d2l-table-circle-button --><!-- Shady DOM styles for d2l-scroll-wrapper --><!-- Shady DOM styles for d2l-table-col-sort --><!-- Shady DOM styles for d2l-table-col-sort-button --><!-- Shady DOM styles for d2l-table-wrapper --><style scope="d2l-table-wrapper">d2l-table-wrapper {
+  background-color:transparent;display:block;width:100%;
+}</style><!-- Shady DOM styles for d2l-tbody --><!-- Shady DOM styles for d2l-td --><!-- Shady DOM styles for d2l-tfoot --><!-- Shady DOM styles for d2l-th --><!-- Shady DOM styles for d2l-thead --><!-- Shady DOM styles for d2l-tr --><!-- Shady DOM styles for d2l-tspan --><!-- Shady DOM styles for d2l-table --><style scope="d2l-table">d2l-table {
+  background-color:transparent;display:block;width:100%;
+}</style><!-- Shady DOM styles for d2l-rubric-loading --><!-- Shady DOM styles for siren-entity --><!-- Shady DOM styles for d2l-rubric-feedback --><!-- Shady DOM styles for d2l-rubric-criterion-cell --><!-- Shady DOM styles for d2l-rubric-editable-score --><!-- Shady DOM styles for d2l-rubric-criteria-group --><!-- Shady DOM styles for d2l-rubric-levels-mobile --><!-- Shady DOM styles for d2l-rubric-criterion-mobile --><!-- Shady DOM styles for d2l-rubric-criteria-mobile --><!-- Shady DOM styles for d2l-rubric-criteria-group-mobile --><!-- Shady DOM styles for d2l-rubric-criteria-groups --><style scope="d2l-rubric-criteria-groups">d2l-rubric-criteria-groups {
+  display:block;
+}
+
+d2l-rubric-criteria-group.d2l-rubric-criteria-groups {
+  padding-bottom:24px;
+}</style><!-- Shady DOM styles for d2l-rubric-overall-score --><!-- Shady DOM styles for d2l-rubric --><!-- Shady DOM styles for d2l-rubric-editor-header --><!-- Shady DOM styles for d2l-rubric-level-editor --><!-- Shady DOM styles for d2l-rubric-levels-editor --><!-- Shady DOM styles for d2l-dnd-sortable --><style scope="d2l-dnd-sortable">d2l-dnd-sortable > .placeholder {
+  opacity:0;
+}</style><!-- Shady DOM styles for d2l-html-editor --><style scope="d2l-html-editor">.disf_default.d2l-html-editor,.disf_flash.d2l-html-editor,.disf_shockwave.d2l-html-editor,.disf_quicktime.d2l-html-editor,.disf_windowsmedia.d2l-html-editor,.disf_realmedia.d2l-html-editor {
+  border-radius:0.3rem;vertical-align:middle;background-color:#f9fafb;border:1px solid #d3d9e3;background-position:center;background-repeat:no-repeat;background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Cg%20fill%3D%22none%22%3E%3Cg%20fill%3D%22%2372777A%22%3E%3Cpath%20d%3D%22M22%202C23.1%202%2024%202.9%2024%204L24%2022C24%2023.1%2023.1%2024%2022%2024L4%2024C2.9%2024%202%2023.1%202%2022L2%204C2%202.9%202.9%202%204%202L22%202%2022%202ZM22%200L4%200C1.8%200%200%201.8%200%204L0%2022C0%2024.2%201.8%2026%204%2026L22%2026C24.2%2026%2026%2024.2%2026%2022L26%204C26%201.8%2024.2%200%2022%200L22%200%2022%200Z%22%2F%3E%3Cpath%20d%3D%22M10%2021C9.4%2021%209%2020.6%209%2020L9%206C9%205.6%209.2%205.3%209.6%205.1%209.9%204.9%2010.3%205%2010.6%205.2L19.6%2012.2C19.9%2012.4%2020%2012.7%2020%2013%2020%2013.3%2019.9%2013.6%2019.6%2013.8L10.6%2020.8C10.4%2020.9%2010.2%2021%2010%2021L10%2021ZM11%208L11%2018%2017.4%2013%2011%208Z%22%2F%3E%3Cpath%20d%3D%22M30%208L30%2026C30%2028.2%2028.2%2030%2026%2030L8%2030C7.4%2030%207%2029.6%207%2029%207%2028.4%207.4%2028%208%2028L24%2028C26.2%2028%2028%2026.2%2028%2024L28%208C28%207.4%2028.4%207%2029%207%2029.6%207%2030%207.4%2030%208L30%208Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.disf_default.d2l-html-editor:hover,.disf_flash.d2l-html-editor:hover,.disf_shockwave.d2l-html-editor:hover,.disf_quicktime.d2l-html-editor:hover,.disf_windowsmedia.d2l-html-editor:hover,.disf_realmedia.d2l-html-editor:hover {
+  background-color:#f2f8fc;border:1px solid #006fbf;background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Cg%20fill%3D%22none%22%3E%3Cg%20fill%3D%22%231C5295%22%3E%3Cpath%20d%3D%22M22%202C23.1%202%2024%202.9%2024%204L24%2022C24%2023.1%2023.1%2024%2022%2024L4%2024C2.9%2024%202%2023.1%202%2022L2%204C2%202.9%202.9%202%204%202L22%202%2022%202ZM22%200L4%200C1.8%200%200%201.8%200%204L0%2022C0%2024.2%201.8%2026%204%2026L22%2026C24.2%2026%2026%2024.2%2026%2022L26%204C26%201.8%2024.2%200%2022%200L22%200%2022%200Z%22%2F%3E%3Cpath%20d%3D%22M10%2021C9.4%2021%209%2020.6%209%2020L9%206C9%205.6%209.2%205.3%209.6%205.1%209.9%204.9%2010.3%205%2010.6%205.2L19.6%2012.2C19.9%2012.4%2020%2012.7%2020%2013%2020%2013.3%2019.9%2013.6%2019.6%2013.8L10.6%2020.8C10.4%2020.9%2010.2%2021%2010%2021L10%2021ZM11%208L11%2018%2017.4%2013%2011%208Z%22%2F%3E%3Cpath%20d%3D%22M30%208L30%2026C30%2028.2%2028.2%2030%2026%2030L8%2030C7.4%2030%207%2029.6%207%2029%207%2028.4%207.4%2028%208%2028L24%2028C26.2%2028%2028%2026.2%2028%2024L28%208C28%207.4%2028.4%207%2029%207%2029.6%207%2030%207.4%2030%208L30%208Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+d2l-html-editor {
+  display:block;position:relative;
+}
+
+d2l-html-editor > .toolbar {
+  position:absolute;top:-2.9rem;z-index:1001;display:inline-block;right:0;
+}
+
+[dir='rtl'] d2l-html-editor > .toolbar, d2l-html-editor[dir='rtl'] > .toolbar {
+  left:0;right:inherit;
+}
+
+[dir="rtl"] d2l-html-editor > .toolbar, d2l-html-editor[dir="rtl"] > .toolbar,d2l-html-editor [dir="rtl"]  > .toolbar {
+  left:0;right:inherit;
+}</style><!-- Shady DOM styles for d2l-rubric-html-editor --><!-- Shady DOM styles for d2l-rubric-text-editor --><style scope="d2l-rubric-text-editor">d2l-rubric-text-editor {
+  line-height:1rem;display:flex;
+}
+
+[hidden].d2l-rubric-text-editor {
+  display:none;
+}
+
+*.d2l-rubric-text-editor {
+  box-sizing:border-box;
+}</style><!-- Shady DOM styles for d2l-rubric-description-editor --><!-- Shady DOM styles for d2l-rubric-feedback-editor --><style scope="d2l-rubric-feedback-editor">d2l-rubric-feedback-editor {
+  display:flex;flex-grow:1;
+}
+
+*.d2l-rubric-feedback-editor {
+  box-sizing:border-box;
+}
+
+d2l-rubric-text-editor.d2l-rubric-feedback-editor {
+  flex-grow:1;
+}</style><!-- Shady DOM styles for d2l-rubric-criterion-editor --><!-- Shady DOM styles for d2l-rubric-criteria-editor --><!-- Shady DOM styles for d2l-rubric-criteria-group-editor --><!-- Shady DOM styles for d2l-rubric-criteria-groups-editor --><!-- Shady DOM styles for d2l-rubric-overall-level-editor --><!-- Shady DOM styles for d2l-rubric-overall-levels-editor --><!-- Shady DOM styles for d2l-rubric-structure-editor --><!-- Shady DOM styles for d2l-alert-toast --><style scope="d2l-alert-toast">d2l-alert-toast {
+  display:block;
+}
+
+d2l-alert-toast .d2l-alert-toast-container.d2l-alert-toast {
+  display:none;
+}
+
+d2l-alert-toast[open] .d2l-alert-toast-container.d2l-alert-toast {
+  border-radius:0.3rem;bottom:1rem;box-shadow:0 0.1rem 0.6rem 0 rgba(0,0,0,0.10);display:block;left:0;margin:0 auto;max-width:710px;opacity:0;position:fixed;right:0;transition-duration:250ms;transition-property:transform, opacity, visibility;transition-timing-function:ease-in;transform:translateY(0);visibility:hidden;width:100%;z-index:10000;
+}
+
+d2l-alert-toast[open] .d2l-alert-toast-container.d2l-alert-toast-container-opened.d2l-alert-toast {
+  opacity:1;transform:translateY(-0.5rem);visibility:visible;
+}</style><!-- Shady DOM styles for d2l-floating-buttons --><!-- Shady DOM styles for d2l-dropdown-button --><style scope="d2l-dropdown-button">d2l-dropdown-button {
+  display:inline-block;outline:none;overflow:visible;position:relative;
+}
+
+d2l-dropdown-button d2l-icon.d2l-dropdown-button {
+  height:0.8rem;width:0.8rem;
+}
+
+d2l-dropdown-button .d2l-dropdown-button-text.d2l-dropdown-button {
+  margin-right:0.6rem;
+}
+
+d2l-dropdown-button[primary] d2l-icon.d2l-dropdown-button {
+  color:white;
+}
+
+[dir="rtl"] d2l-dropdown-button .d2l-dropdown-button-text.d2l-dropdown-button, d2l-dropdown-button[dir="rtl"] .d2l-dropdown-button-text.d2l-dropdown-button {
+  margin-left:0.6rem;margin-right:0;
+}
+
+[dir="rtl"] d2l-dropdown-button .d2l-dropdown-button-text.d2l-dropdown-button, d2l-dropdown-button[dir="rtl"] .d2l-dropdown-button-text.d2l-dropdown-button,d2l-dropdown-button [dir="rtl"]  .d2l-dropdown-button-text.d2l-dropdown-button {
+  margin-left:0.6rem;margin-right:0;
+}</style><!-- Shady DOM styles for d2l-button-group-menu --><style scope="d2l-button-group-menu">d2l-button-group-menu[mini] .d2l-dropdown-opener.d2l-button-group-menu {
+  padding-left:0.5rem;padding-right:0.5rem;
+}</style><!-- Shady DOM styles for d2l-button-group --><style scope="d2l-button-group">d2l-button-group {
+  display:block;
+}
+
+d2l-button-group .d2l-button-group-container.d2l-button-group {
+  display:flex;flex:0 1 auto;flex-wrap:wrap;
+}
+
+d2l-button-group .d2l-button-group-container.d2l-button-group > d2l-button,d2l-button-group .d2l-button-group-container.d2l-button-group > d2l-button-subtle,d2l-button-group .d2l-button-group-container.d2l-button-group > d2l-button-icon,d2l-button-group .d2l-button-group-container.d2l-button-group > d2l-link,d2l-button-group .d2l-button-group-container.d2l-button-group > span,d2l-button-group .d2l-button-group-container.d2l-button-group > d2l-dropdown,d2l-button-group .d2l-button-group-container.d2l-button-group > d2l-dropdown-button,d2l-button-group .d2l-button-group-container.d2l-button-group > .d2l-button-group-custom-item {
+  margin-right:0.75rem;
+}
+
+d2l-button-group .d2l-button-group-container.d2l-button-group > [chomped] {
+  display:none !important;
+}</style><!-- Shady DOM styles for d2l-button-subtle-group-menu --><style scope="d2l-button-subtle-group-menu">d2l-button-subtle-group-menu[mini] .d2l-dropdown-opener.d2l-button-subtle-group-menu {
+  padding-left:0.5rem;padding-right:0.5rem;
+}</style><!-- Shady DOM styles for d2l-action-button-group --><style scope="d2l-action-button-group">d2l-action-button-group {
+  display:block;
+}
+
+d2l-action-button-group .d2l-button-group-container.d2l-action-button-group {
+  display:flex;flex:0 1 auto;flex-wrap:wrap;
+}
+
+d2l-action-button-group .d2l-button-group-container.d2l-action-button-group > d2l-button,d2l-action-button-group .d2l-button-group-container.d2l-action-button-group > d2l-button-subtle,d2l-action-button-group .d2l-button-group-container.d2l-action-button-group > d2l-button-icon,d2l-action-button-group .d2l-button-group-container.d2l-action-button-group > d2l-link,d2l-action-button-group .d2l-button-group-container.d2l-action-button-group > span,d2l-action-button-group .d2l-button-group-container.d2l-action-button-group > d2l-dropdown,d2l-action-button-group .d2l-button-group-container.d2l-action-button-group > d2l-dropdown-button,d2l-action-button-group .d2l-button-group-container.d2l-action-button-group > .d2l-button-group-custom-item {
+  margin-right:0.75rem;
+}
+
+d2l-action-button-group .d2l-button-group-container.d2l-action-button-group > [chomped] {
+  display:none !important;
+}</style><!-- Shady DOM styles for d2l-dropdown-context-menu --><style scope="d2l-dropdown-context-menu">d2l-dropdown-context-menu {
+  display:inline-block;outline:none;overflow:visible;position:relative;
+}
+
+d2l-dropdown-context-menu[d2l-visible-on-ancestor-init] {
+  visibility:hidden;
+}
+
+d2l-dropdown-context-menu[d2l-visible-on-ancestor-transition] {
+  transition:transform 200ms ease-out, opacity 200ms ease-out !important;
+}
+
+d2l-dropdown-context-menu[d2l-visible-on-ancestor-hide] {
+  opacity:0 !important;transform:translateY(-10px) !important;
+}
+
+@media only screen and (hover: none), only screen and (-moz-touch-enabled: 1) {
+d2l-dropdown-context-menu[d2l-visible-on-ancestor-hide] {
+  opacity:1 !important;transform:translateY(0px) !important;
+}
+
+d2l-dropdown-context-menu[d2l-visible-on-ancestor-hide][d2l-visible-on-ancestor-no-hover-hide] {
+  opacity:0 !important;transform:translateY(-10px) !important;
+}
+
+}
+
+d2l-dropdown-context-menu {
+  display:inline-block;
+}</style><!-- Shady DOM styles for d2l-input-search --><!-- Shady DOM styles for iron-icon --><!-- Shady DOM styles for d2l-navigation-band --><style scope="d2l-navigation-band-0">.d2l-navigation-band-0 {
+  border-top-color:#e32525;border-top-style:solid;border-top-width:4px;display:block;
+}</style><!-- Shady DOM styles for d2l-navigation --><style scope="d2l-navigation">d2l-navigation {
+  display:block;position:relative;
+}
+
+.d2l-navigation-shadow-drop-border.d2l-navigation {
+  background-color:rgba(0,0,0,0.02);bottom:-4px;height:4px;pointer-events:none;position:absolute;width:100%;
+}
+
+.d2l-navigation-shadow-gradient.d2l-navigation {
+  background:linear-gradient(to bottom,  rgba(249,250,251,1) 0%,rgba(249,250,251,0) 100%);bottom:-150px;height:150px;width:100%;pointer-events:none;position:absolute;z-index:-100;
+}</style><!-- Shady DOM styles for d2l-navigation-button --><style scope="d2l-navigation-button-1">.d2l-navigation-button-1 {
+  ;
+}
+
+.d2l-navigation-button-1[disabled] button.d2l-navigation-button {
+  opacity:.5;cursor:default;
+}
+
+.d2l-navigation-button-1:not([disabled]) button.d2l-navigation-button:hover,.d2l-navigation-button-1:not([disabled]) button.d2l-navigation-button:focus,.d2l-navigation-button-1:not([disabled]) button.d2l-navigation-button:hover > *,.d2l-navigation-button-1:not([disabled]) button.d2l-navigation-button:focus > * {
+  color:#006fbf;outline:none;
+}
+
+.d2l-navigation-button-1:not([disabled]) button.d2l-navigation-button:hover > * *,.d2l-navigation-button-1:not([disabled]) button.d2l-navigation-button:focus > * * {
+  color:#006fbf;outline:none;
+}
+
+.d2l-navigation-button-1:not([disabled]) button.d2l-navigation-button:hover .d2l-navigation-button-top-border.d2l-navigation-button,.d2l-navigation-button-1:not([disabled]) button.d2l-navigation-button:focus .d2l-navigation-button-top-border.d2l-navigation-button {
+  background:#006fbf;
+}
+
+.d2l-navigation-button-1 button.d2l-navigation-button {
+  align-items:center;background:transparent;border:transparent;color:#565a5c;cursor:pointer;font-size:inherit;height:100%;margin:0;min-height:40px;outline:transparent;overflow:visible;padding:0;position:relative;text-decoration:none;font-family:inherit;
+}
+
+.d2l-navigation-button-1 .d2l-navigation-button-top-border.d2l-navigation-button {
+  background:transparent;border-bottom-left-radius:4px;border-bottom-right-radius:4px;display:block;height:4px;left:-7px;position:absolute;top:0;width:calc(100% + 14px);
+}
+
+.d2l-navigation-button-1 .d2l-offscreen-description.d2l-navigation-button {
+  ;
+}
+
+[dir="rtl"] .d2l-navigation-button-1 .d2l-offscreen-description.d2l-navigation-button, .d2l-navigation-button-1[dir="rtl"] .d2l-offscreen-description.d2l-navigation-button,[dir="rtl"] .d2l-navigation-button-1 .d2l-offscreen-description.d2l-navigation-button, .d2l-navigation-button-1[dir="rtl"] .d2l-offscreen-description.d2l-navigation-button,.d2l-navigation-button-1 [dir="rtl"]  .d2l-offscreen-description.d2l-navigation-button {
+  ;
+}</style><style scope="d2l-navigation-button-0">.d2l-navigation-button-0 {
+  ;
+}
+
+.d2l-navigation-button-0[disabled] button.d2l-navigation-button {
+  opacity:.5;cursor:default;
+}
+
+.d2l-navigation-button-0:not([disabled]) button.d2l-navigation-button:hover,.d2l-navigation-button-0:not([disabled]) button.d2l-navigation-button:focus,.d2l-navigation-button-0:not([disabled]) button.d2l-navigation-button:hover > *,.d2l-navigation-button-0:not([disabled]) button.d2l-navigation-button:focus > * {
+  color:#006fbf;outline:none;
+}
+
+.d2l-navigation-button-0:not([disabled]) button.d2l-navigation-button:hover > * *,.d2l-navigation-button-0:not([disabled]) button.d2l-navigation-button:focus > * * {
+  color:#006fbf;outline:none;
+}
+
+.d2l-navigation-button-0:not([disabled]) button.d2l-navigation-button:hover .d2l-navigation-button-top-border.d2l-navigation-button,.d2l-navigation-button-0:not([disabled]) button.d2l-navigation-button:focus .d2l-navigation-button-top-border.d2l-navigation-button {
+  background:#006fbf;
+}
+
+.d2l-navigation-button-0 button.d2l-navigation-button {
+  align-items:center;background:transparent;border:transparent;color:#565a5c;cursor:pointer;font-size:inherit;height:100%;margin:0;min-height:40px;outline:transparent;overflow:visible;padding:0;position:relative;text-decoration:none;font-family:inherit;
+}
+
+.d2l-navigation-button-0 .d2l-navigation-button-top-border.d2l-navigation-button {
+  background:transparent;border-bottom-left-radius:4px;border-bottom-right-radius:4px;display:block;height:4px;left:-7px;position:absolute;top:0;width:calc(100% + 14px);
+}
+
+.d2l-navigation-button-0 .d2l-offscreen-description.d2l-navigation-button {
+  position:absolute !important;overflow:hidden;width:1px;height:1px;white-space:nowrap;left:-10000px;
+}
+
+[dir="rtl"] .d2l-navigation-button-0 .d2l-offscreen-description.d2l-navigation-button, .d2l-navigation-button-0[dir="rtl"] .d2l-offscreen-description.d2l-navigation-button,[dir="rtl"] .d2l-navigation-button-0 .d2l-offscreen-description.d2l-navigation-button, .d2l-navigation-button-0[dir="rtl"] .d2l-offscreen-description.d2l-navigation-button,.d2l-navigation-button-0 [dir="rtl"]  .d2l-offscreen-description.d2l-navigation-button {
+  left:0;right:-10000px;
+}</style><!-- Shady DOM styles for d2l-navigation-button-notification-icon --><style scope="d2l-navigation-button-notification-icon-0">.d2l-navigation-button-notification-icon-0 {
+  ;
+}
+
+.d2l-navigation-button-notification-icon-0 {
+  display:inline-block;height:100%;
+}
+
+.d2l-navigation-button-notification-icon-0[notification] .d2l-navigation-button-notification-indicator.d2l-navigation-button-notification-icon {
+  display:inline-block;
+}
+
+.d2l-navigation-button-notification-icon-0 .d2l-navigation-button-icon-container.d2l-navigation-button-notification-icon {
+  display:inline-block;position:relative;
+}
+
+.d2l-navigation-button-notification-icon-0 .d2l-navigation-button-notification-indicator.d2l-navigation-button-notification-icon {
+  display:none;height:100%;position:absolute;right:calc(-50% - 4px);top:calc(-50% + 11px);width:100%;
+}
+
+[dir="rtl"] .d2l-navigation-button-notification-icon-0 .d2l-navigation-button-notification-indicator.d2l-navigation-button-notification-icon, .d2l-navigation-button-notification-icon-0[dir="rtl"] .d2l-navigation-button-notification-indicator.d2l-navigation-button-notification-icon,[dir="rtl"] .d2l-navigation-button-notification-icon-0 .d2l-navigation-button-notification-indicator.d2l-navigation-button-notification-icon, .d2l-navigation-button-notification-icon-0[dir="rtl"] .d2l-navigation-button-notification-indicator.d2l-navigation-button-notification-icon,.d2l-navigation-button-notification-icon-0 [dir="rtl"]  .d2l-navigation-button-notification-indicator.d2l-navigation-button-notification-icon {
+  left:calc(-50% - 4px);right:auto;
+}
+
+.d2l-navigation-button-notification-icon-0 .d2l-navigation-button-notification-indicator-icon.d2l-navigation-button-notification-icon {
+  background:#e87511;border:2px solid white;height:10px;width:10px;border-radius:50%;
+}</style><!-- Shady DOM styles for d2l-navigation-button-close --><style scope="d2l-navigation-button-close">d2l-navigation-button-close {
+  display:inline-block;height:100%;
+}
+
+d2l-navigation-button-notification-icon.d2l-navigation-button-close {
+  height:100%;
+}</style><!-- Shady DOM styles for d2l-navigation-main-header --><style scope="d2l-navigation-main-header-0">.d2l-navigation-main-header-0 {
+  ;
+}
+
+.d2l-navigation-main-header-0 .d2l-navigation-centerer.d2l-navigation-main-header {
+  margin:0 auto;max-width:1230px;
+}
+
+.d2l-navigation-main-header-0 .d2l-navigation-gutters.d2l-navigation-main-header {
+  padding-left:2.439%;padding-right:2.439%;position:relative;
+}
+
+@media (max-width: 615px) {
+.d2l-navigation-main-header-0 .d2l-navigation-gutters.d2l-navigation-main-header {
+  padding-left:15px;padding-right:15px;
+}
+
+}
+
+@media (min-width: 1230px) {
+.d2l-navigation-main-header-0 .d2l-navigation-gutters.d2l-navigation-main-header {
+  padding-left:30px;padding-right:30px;
+}
+
+}
+
+.d2l-navigation-main-header-0 {
+  display:block;
+}
+
+.d2l-navigation-main-header-0 .d2l-navigation-header-container.d2l-navigation-main-header {
+  align-items:center;display:flex;height:90px;
+}
+
+@media (max-width: 767px) {
+.d2l-navigation-main-header-0 .d2l-navigation-header-container.d2l-navigation-main-header {
+  height:72px;
+}
+
+}
+
+.d2l-navigation-main-header-0 div.d2l-navigation-main-header > .d2l-navigation-header-left,.d2l-navigation-main-header-0 div.d2l-navigation-main-header > .d2l-navigation-header-right {
+  align-items:center;display:flex;height:100%;
+}
+
+.d2l-navigation-main-header-0 div.d2l-navigation-main-header > .d2l-navigation-header-left {
+  flex:0 1 auto;
+}
+
+.d2l-navigation-main-header-0 div.d2l-navigation-main-header > .d2l-navigation-header-right {
+  flex:0 0 auto;
+}
+
+.d2l-navigation-main-header-0 .d2l-navigation-gutter.d2l-navigation-main-header {
+  display:inline-block;flex:1 1 auto;min-width:30px;
+}
+
+@media (max-width: 615px) {
+.d2l-navigation-main-header-0 .d2l-navigation-gutter.d2l-navigation-main-header {
+  min-width:30px / 2;
+}
+
+}</style><!-- Shady DOM styles for d2l-navigation-main-footer --><style scope="d2l-navigation-main-footer">.d2l-navigation-centerer.d2l-navigation-main-footer {
+  margin:0 auto;max-width:1230px;
+}
+
+.d2l-navigation-gutters.d2l-navigation-main-footer {
+  padding-left:2.439%;padding-right:2.439%;position:relative;
+}
+
+@media (max-width: 615px) {
+.d2l-navigation-gutters.d2l-navigation-main-footer {
+  padding-left:15px;padding-right:15px;
+}
+
+}
+
+@media (min-width: 1230px) {
+.d2l-navigation-gutters.d2l-navigation-main-footer {
+  padding-left:30px;padding-right:30px;
+}
+
+}
+
+d2l-navigation-main-footer {
+  display:block;
+}</style><!-- Shady DOM styles for d2l-navigation-link --><style scope="d2l-navigation-link-0">.d2l-navigation-link-0 {
+  ;
+}
+
+.d2l-navigation-link-0 {
+  display:flex;height:100%;
+}
+
+.d2l-navigation-link-0 a.d2l-navigation-link {
+  align-items:center;background:transparent;border:transparent;color:#565a5c;cursor:pointer;font-size:inherit;height:100%;margin:0;min-height:40px;outline:transparent;overflow:visible;padding:0;position:relative;text-decoration:none;font-family:inherit;
+}
+
+.d2l-navigation-link-0:not([href]) a.d2l-navigation-link {
+  cursor:default;
+}
+
+.d2l-navigation-link-0 a.d2l-navigation-link:hover,.d2l-navigation-link-0 a.d2l-navigation-link:focus {
+  color:#006fbf;outline:none;
+}
+
+.d2l-navigation-link-0 a.d2l-navigation-link:hover .d2l-navigation-link-top-border.d2l-navigation-link,.d2l-navigation-link-0 a.d2l-navigation-link:focus .d2l-navigation-link-top-border.d2l-navigation-link {
+  background:#006fbf;
+}
+
+.d2l-navigation-link-0 .d2l-navigation-link-top-border.d2l-navigation-link {
+  background:transparent;border-bottom-left-radius:4px;border-bottom-right-radius:4px;display:block;height:4px;left:-7px;position:absolute;top:0;width:calc(100% + 14px);
+}</style><!-- Shady DOM styles for d2l-navigation-link-back --><style scope="d2l-navigation-link-back">d2l-navigation-link-back {
+  display:inline-block;height:100%;
+}
+
+d2l-icon.d2l-navigation-link-back {
+  color:inherit;
+}
+
+span.d2l-navigation-link-back {
+  padding:0 5px;
+}
+
+span.d2l-navigation-link-back,d2l-icon.d2l-navigation-link-back {
+  vertical-align:middle;height:100%;
+}</style><!-- Shady DOM styles for d2l-navigation-link-image --><style scope="d2l-navigation-link-image">d2l-navigation-link-image {
+  display:inline-block;height:100%;
+}
+
+img.d2l-navigation-link-image {
+  vertical-align:middle;border:none;max-height:60px;max-width:260px;
+}
+
+.d2l-navigation-link-image-container.d2l-navigation-link-image {
+  height:100%;vertical-align:middle;align-items:center;display:inline-flex;
+}</style><!-- Shady DOM styles for d2l-navigation-separator --><style scope="d2l-navigation-separator-0">.d2l-navigation-separator-0 {
+  display:inline-block;margin:0 9px;
+}
+
+.d2l-navigation-separator-0 d2l-icon.d2l-navigation-separator {
+  color:#d3d9e3;
+}</style><!-- Shady DOM styles for d2l-profile-image-base --><!-- Shady DOM styles for d2l-profile-image -->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development</title>
+		<script async="" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/adrum-ext.js.download"></script><script type="text/javascript">
+		//<![CDATA[
+			(function(){if('PerformanceLongTaskTiming' in window) {var g = window.__tti = {e:[]};g.o = new PerformanceObserver( function( l ){ g.e = g.e.concat( l.getEntries() ) });g.o.observe({ entryTypes:['longtask']})}})();
+			(function(){document.addEventListener('WebComponentsReady', function() { window.d2lWCRDispatched = true; });var onload = function() { if(!window.HTMLImports) { document.dispatchEvent(new CustomEvent('WebComponentsReady', {bubbles: true}));} };var webComponentsSupported = ('registerElement' in document && 'import' in document.createElement( 'link' ) && 'content' in document.createElement('template'));if(!webComponentsSupported) { var script = document.createElement('script'); script.async = true; script.src = 'https://s.brightspace.com/lib/webcomponentsjs/0.7.23-d2l.3/webcomponents-lite.min.js'; script.onload = onload; document.head.appendChild(script); } else { onload(); }})();
+			(function(){try { localStorage.setItem('XSRF.Token','8C9KCC9TeU4jrnflVwbJuTl65zw54i8U');localStorage.setItem('Session.UserId','506656');} catch(e) {}})();
+			(function(){if(window['FontFace'] === undefined) { return; }new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.4.0/assets/Lato-400.woff2) format("woff2"), url(https://s.brightspace.com/lib/fonts/0.4.0/assets/Lato-400.woff) format("woff")',{style:'normal',weight:'400'}).load();new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.4.0/assets/Lato-700.woff2) format("woff2"), url(https://s.brightspace.com/lib/fonts/0.4.0/assets/Lato-700.woff) format("woff")',{style:'normal',weight:'700'}).load();})();
+		//]]>
+		</script>
+		<meta name="robots" content="noindex">
+		<link rel="icon" href="https://hostedpages.brightspace.com/_favicons/b77cfe6c-8f13-49a8-a208-57fa8966d68f/1.0.0/favicon.ico">
+		<link rel="import" href="https://s.brightspace.com/lib/bsi/10.8.9-daylight.25/bundled/web-components/bsi.html">
+		<link rel="stylesheet" type="text/css" href="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/bsi.min.css">
+		<link rel="stylesheet" type="text/css" href="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/reset.css">
+		<link rel="stylesheet" type="text/css" href="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/D2L.LP.Web.Desktop.default.css">
+		<link rel="stylesheet" type="text/css" href="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/D2L.LE.Content.Web.Desktop.default.css">
+		<link rel="stylesheet" type="text/css" href="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/D2L.LE.ToolIntegration.Content.default.css">
+		<link rel="stylesheet" type="text/css" href="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/D2L.LP.Web.Desktop.Print.default.css" media="print">
+		<style type="text/css">
+		/*<![CDATA[*/
+			html { font-size:18px; }
+			.d2l-branding-navigation-background-color {background-color: #4a4a4a;}
+			.d2l_1_11_391 {margin:10px;}
+			.d2l_1_12_301 {width:500px;}
+			.d2l_1_13_821 {background-position:left top;}
+			.d2l_1_14_726 {padding:1em;}
+			.d2l_1_15_830 {background-image:url('https://s.brightspace.com/lib/bsi/10.8.9-daylight.25/images/tier1/alert.svg');}
+			.d2l_1_16_264 {background-position:right top;}
+			.d2l_1_17_65 {padding-right:31px;}
+			.d2l_1_18_306 {min-height:18px;}
+			.d2l_1_19_170 {background-image:url('https://s.brightspace.com/lib/bsi/10.8.9-daylight.25/images/tier1/check.svg');}
+			.d2l_1_20_535 {padding:3.4em;}
+			.d2l_1_22_530 {table-layout: Inherit;}
+			.d2l_1_23_214 {vertical-align:baseline;}
+			.d2l_1_24_583 {width:100%;}
+			.d2l_1_26_33 {margin-top:0.5em;margin-bottom:10px;}
+			@media (max-width: 1000px) {.d2l_1_27_833 {display:none}}
+			.d2l_1_28_596 {table-layout: Fixed;}
+			.d2l_1_36_302 {margin:0 5px;}
+			.d2l_1_41_90 {margin-left:10px;}
+			.d2l_1_42_336 {margin-bottom:10px;}
+			.d2l_1_45_111 {padding:20px 0 0 0;}
+			.d2l_1_46_395 {float:left;}
+			.d2l_1_47_186 {background-image:url('https://s.brightspace.com/lib/bsi/10.8.9-daylight.25/images/tier1/reflection.svg');background-position:0 0;background-repeat:no-repeat;width:18px;height:18px;background-size:18px 18px;}
+			.d2l_1_48_60 {background-image:url('https://s.brightspace.com/lib/bsi/10.8.9-daylight.25/images/tier1/download.svg');background-position:0 0;background-repeat:no-repeat;width:18px;height:18px;background-size:18px 18px;}
+			.d2l_1_49_926 {background-image:url('https://s.brightspace.com/lib/bsi/10.8.9-daylight.25/images/tier1/print.svg');background-position:0 0;background-repeat:no-repeat;width:18px;height:18px;background-size:18px 18px;}
+			.d2l_1_50_892:before {content:url('/d2l/img/0/ReadSpeakerDocReader.Icon.icon.gif?v=10.8.9.14571-201');transform:scale(1.125,1.125);}
+			.d2l_1_51_433 {float:right;}
+			.d2l_1_52_985 {padding:20px 0;}
+			.d2l_1_55_555 {padding:10px;}
+			.d2l_1_56_466 {border-right:1px solid #DDD;border-bottom:1px solid #DDD;border-left:1px solid #DDD;}
+			.d2l_1_57_47 {padding:0 0 10px 0;}
+			.d2l_1_58_137 {background-image:url('https://s.brightspace.com/lib/bsi/10.8.9-daylight.25/images/tier2/check.svg');}
+			.d2l_1_59_234 {padding-left:37px;}
+			.d2l_1_60_859 {min-height:24px;}
+		/*]]>*/
+		</style>
+		<script>(function() {})();</script><style is="custom-style"></style><style is="custom-style">.d2l-button-spacing:not([style-scope]):not(.style-scope) {
+  margin-right:0.75rem;
+}
+
+[dir='rtl']:not([style-scope]):not(.style-scope) .d2l-button-spacing:not([style-scope]):not(.style-scope) {
+  margin-left:0.75rem;margin-right:0;
+}
+
+</style><style is="custom-style"></style><style is="custom-style"></style><style is="custom-style"></style><style>[hidden] { display: none !important; }</style><style is="custom-style">[hidden]:not([style-scope]):not(.style-scope) {
+  display:none !important;
+}
+
+</style><style is="custom-style"></style><style is="custom-style"></style></head>
+	<body class="d2l-body d2l-typography vui-typography d2l-flag-f-13154-remove-confirmations-start-submit-quiz daylight">
+		<style is="custom-style"></style>
+		<a href="https://learn.sait.ca/d2l/le/content/285490/viewContent/7199020/View#d2l_1_10_391" class="d2l-skipnav" id="d2l_skipnav">skip to main content</a>
+		<header><nav class="d2l-navigation-s d2l-branding-navigation-light-foreground-color d2l-navigation-s-has-branding d2l-navigation-s-linkarea-has-color d2l-navigation-s-has-title"><d2l-navigation><d2l-navigation-band class="style-scope d2l-navigation x-scope d2l-navigation-band-0"></d2l-navigation-band><d2l-navigation-main-header class="x-scope d2l-navigation-main-header-0"><div class="d2l-navigation-centerer style-scope d2l-navigation-main-header"><div class="d2l-navigation-gutters style-scope d2l-navigation-main-header"><div class="d2l-navigation-header-container style-scope d2l-navigation-main-header"><div class="d2l-navigation-header-left" slot="left"><div class="d2l-navigation-s-header-open-button-wrapper"><d2l-navigation-button-notification-icon icon="d2l-tier3:menu-hamburger" text="menu" class="x-scope d2l-navigation-button-notification-icon-0"><d2l-navigation-button class="style-scope d2l-navigation-button-notification-icon x-scope d2l-navigation-button-0" text="menu"><button class="d2l-focusable style-scope d2l-navigation-button" title="menu" aria-label="menu" aria-describedby="d2l-uid-1"><span class="d2l-navigation-button-top-border style-scope d2l-navigation-button"></span><span class="d2l-navigation-button-icon-container style-scope d2l-navigation-button-notification-icon"><d2l-icon class="d2l-navigation-button-icon style-scope d2l-navigation-button-notification-icon x-scope d2l-icon-0" icon="d2l-tier3:menu-hamburger"><svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M28.5 9h-27C.67 9 0 8.33 0 7.5S.67 6 1.5 6h27c.828 0 1.5.67 1.5 1.5S29.328 9 28.5 9zM28.5 17h-27C.67 17 0 16.328 0 15.5S.67 14 1.5 14h27c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5zM28.5 25h-27C.67 25 0 24.328 0 23.5S.67 22 1.5 22h27c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span class="d2l-navigation-button-notification-indicator style-scope d2l-navigation-button-notification-icon"><div class="d2l-navigation-button-notification-indicator-icon style-scope d2l-navigation-button-notification-icon"></div></span></span></button><span class="d2l-offscreen-description style-scope d2l-navigation-button" id="d2l-uid-1"> </span></d2l-navigation-button></d2l-navigation-button-notification-icon></div><div class="d2l-navigation-s-header-logo-area d2l-navigation-s-header-no-home-icon"><d2l-navigation-separator class="d2l-navigation-s-logo-divider x-scope d2l-navigation-separator-0"><d2l-icon icon="d2l-tier2:divider-big" class="style-scope d2l-navigation-separator x-scope d2l-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><circle cx="12.5" cy="1.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="6.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="11.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="16.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="21.5" r="1.5" class="style-scope d2l-icon"></circle></g></svg></d2l-icon></d2l-navigation-separator><div class="d2l-navigation-s-logo"><d2l-navigation-link-image src="/d2l/lp/navbars/6605/theme/viewimage/3208789/view?v=10.8.9.14571-201" text="My Home" href="/d2l/lp/ouHome/defaultHome.d2l"><d2l-navigation-link class="style-scope d2l-navigation-link-image x-scope d2l-navigation-link-0" href="/d2l/lp/ouHome/defaultHome.d2l"><a class="d2l-focusable style-scope d2l-navigation-link" href="https://learn.sait.ca/d2l/lp/ouHome/defaultHome.d2l" title="My Home"><span class="d2l-navigation-link-top-border style-scope d2l-navigation-link"></span><template is="dom-if" class="style-scope d2l-navigation-link"></template><span class="d2l-navigation-link-image-container style-scope d2l-navigation-link-image"><img class="style-scope d2l-navigation-link-image" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/sait.logo.png" alt="My Home"></span></a></d2l-navigation-link></d2l-navigation-link-image></div><d2l-navigation-separator class="d2l-navigation-s-title-divider x-scope d2l-navigation-separator-0"><d2l-icon icon="d2l-tier2:divider-big" class="style-scope d2l-navigation-separator x-scope d2l-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><circle cx="12.5" cy="1.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="6.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="11.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="16.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="21.5" r="1.5" class="style-scope d2l-icon"></circle></g></svg></d2l-icon></d2l-navigation-separator><div class="d2l-navigation-s-title-container"><a class="d2l-navigation-s-link" href="https://learn.sait.ca/d2l/home/285490" title="CPRG-210-OSD - Web Application Development">CPRG-210-OSD - Web Application Development</a></div></div></div><div class="d2l-navigation-gutter style-scope d2l-navigation-main-header"></div><div class="d2l-navigation-header-right" slot="right"><div class="d2l-navigation-s-course-menu"><d2l-dropdown no-auto-open=""><d2l-navigation-button-notification-icon class="d2l-dropdown-opener x-scope d2l-navigation-button-notification-icon-0" icon="d2l-tier3:classes" text="Select a course..." data-prl="/d2l/lp/courseSelector/285490/InitPartial" aria-haspopup="true" aria-expanded="false"><d2l-navigation-button class="style-scope d2l-navigation-button-notification-icon x-scope d2l-navigation-button-0" text="Select a course..." aria-haspopup="true" aria-expanded="false"><button class="d2l-focusable style-scope d2l-navigation-button" title="Select a course..." aria-label="Select a course..." aria-describedby="d2l-uid-2" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-button-top-border style-scope d2l-navigation-button"></span><span class="d2l-navigation-button-icon-container style-scope d2l-navigation-button-notification-icon"><d2l-icon class="d2l-navigation-button-icon style-scope d2l-navigation-button-notification-icon x-scope d2l-icon-0" icon="d2l-tier3:classes"><svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M2.668 21c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488H2.668zM3 23h4v4H3v-4zM2.668 1c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18V2.668c0-.462-.187-.878-.488-1.18C8.21 1.188 7.794 1 7.332 1H2.668zM3 3h4v4H3V3zM2.668 11c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488H2.668zM3 13h4v4H3v-4zM12.668 21c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM13 23h4v4h-4v-4zM12.668 1c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18V2.668c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM13 3h4v4h-4V3zM12.668 11c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM13 13h4v4h-4v-4zM22.668 21c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM23 23h4v4h-4v-4zM22.668 1c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18V2.668c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM23 3h4v4h-4V3zM22.668 11c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM23 13h4v4h-4v-4z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span class="d2l-navigation-button-notification-indicator style-scope d2l-navigation-button-notification-icon"><div class="d2l-navigation-button-notification-indicator-icon style-scope d2l-navigation-button-notification-icon"></div></span></span></button><span class="d2l-offscreen-description style-scope d2l-navigation-button" id="d2l-uid-2"> </span></d2l-navigation-button></d2l-navigation-button-notification-icon><d2l-dropdown-content max-width="800" min-width="450" no-padding="" vertical-offset="0" d2l-dropdown-content="" class="x-scope d2l-dropdown-content-1"><div class="d2l-dropdown-content-position style-scope d2l-dropdown-content"><div class="d2l-dropdown-content-width style-scope d2l-dropdown-content" style="min-width: 450px; max-width: 800px;"><div class="d2l-dropdown-content-top style-scope d2l-dropdown-content"></div><div class="d2l-dropdown-content-container style-scope d2l-dropdown-content" style="min-width: 450px;"><template is="dom-if" class="style-scope d2l-dropdown-content"></template></div><div class="d2l-dropdown-content-bottom style-scope d2l-dropdown-content"></div></div></div><div class="d2l-dropdown-content-pointer style-scope d2l-dropdown-content"><div class="style-scope d2l-dropdown-content"></div></div></d2l-dropdown-content></d2l-dropdown></div><d2l-navigation-separator class="d2l-navigation-s-course-menu-divider x-scope d2l-navigation-separator-0"><d2l-icon icon="d2l-tier2:divider-big" class="style-scope d2l-navigation-separator x-scope d2l-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><circle cx="12.5" cy="1.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="6.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="11.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="16.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="21.5" r="1.5" class="style-scope d2l-icon"></circle></g></svg></d2l-icon></d2l-navigation-separator><div class="d2l-navigation-s-notifications"><div class="d2l-navigation-s-notifications-wrapper"><div class="d2l-navigation-s-notification" data-category="messages" data-aria-message="You have new Messages"><d2l-dropdown no-auto-open=""><d2l-navigation-button-notification-icon class="d2l-dropdown-opener x-scope d2l-navigation-button-notification-icon-0" icon="d2l-tier3:email" text="Message alerts" data-prl="/d2l/MiniBar/285490/ActivityFeed/GetAlertsDaylight?Category=2" aria-haspopup="true" aria-expanded="false"><d2l-navigation-button class="style-scope d2l-navigation-button-notification-icon x-scope d2l-navigation-button-0" text="Message alerts" aria-haspopup="true" aria-expanded="false"><button class="d2l-focusable style-scope d2l-navigation-button" title="Message alerts" aria-label="Message alerts" aria-describedby="d2l-uid-3" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-button-top-border style-scope d2l-navigation-button"></span><span class="d2l-navigation-button-icon-container style-scope d2l-navigation-button-notification-icon"><d2l-icon class="d2l-navigation-button-icon style-scope d2l-navigation-button-notification-icon x-scope d2l-icon-0" icon="d2l-tier3:email"><svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M27 6H3C1.35 6 0 7.35 0 9v12c0 1.65 1.35 3 3 3h24c1.65 0 3-1.35 3-3V9c0-1.65-1.35-3-3-3zm1 2l-13 8L2 8h26zm0 13c0 .54-.46 1-1 1H3c-.54 0-1-.46-1-1V10.35l11.95 7.35c.32.2.69.3 1.05.3s.73-.1 1.05-.3L28 10.35V21z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span class="d2l-navigation-button-notification-indicator style-scope d2l-navigation-button-notification-icon"><div class="d2l-navigation-button-notification-indicator-icon style-scope d2l-navigation-button-notification-icon"></div></span></span></button><span class="d2l-offscreen-description style-scope d2l-navigation-button" id="d2l-uid-3"> </span></d2l-navigation-button></d2l-navigation-button-notification-icon><d2l-dropdown-content no-padding="" vertical-offset="0" max-width="500" d2l-dropdown-content="" class="x-scope d2l-dropdown-content-1"><div class="d2l-dropdown-content-position style-scope d2l-dropdown-content"><div class="d2l-dropdown-content-width style-scope d2l-dropdown-content" style="max-width: 500px;"><div class="d2l-dropdown-content-top style-scope d2l-dropdown-content"></div><div class="d2l-dropdown-content-container style-scope d2l-dropdown-content"><template is="dom-if" class="style-scope d2l-dropdown-content"></template></div><div class="d2l-dropdown-content-bottom style-scope d2l-dropdown-content"></div></div></div><div class="d2l-dropdown-content-pointer style-scope d2l-dropdown-content"><div class="style-scope d2l-dropdown-content"></div></div></d2l-dropdown-content></d2l-dropdown></div><div class="d2l-navigation-s-notification" data-category="alerts" data-aria-message="You have new Subscriptions"><d2l-dropdown no-auto-open=""><d2l-navigation-button-notification-icon class="d2l-dropdown-opener x-scope d2l-navigation-button-notification-icon-0" icon="d2l-tier3:discussions" text="Subscription alerts" data-prl="/d2l/MiniBar/285490/ActivityFeed/GetAlertsDaylight?Category=0" aria-haspopup="true" aria-expanded="false"><d2l-navigation-button class="style-scope d2l-navigation-button-notification-icon x-scope d2l-navigation-button-0" text="Subscription alerts" aria-haspopup="true" aria-expanded="false"><button class="d2l-focusable style-scope d2l-navigation-button" title="Subscription alerts" aria-label="Subscription alerts" aria-describedby="d2l-uid-4" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-button-top-border style-scope d2l-navigation-button"></span><span class="d2l-navigation-button-icon-container style-scope d2l-navigation-button-notification-icon"><d2l-icon class="d2l-navigation-button-icon style-scope d2l-navigation-button-notification-icon x-scope d2l-icon-0" icon="d2l-tier3:discussions"><svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M5 27.866V28M19.43 11c.86 0 1.57.71 1.57 1.57v8.86c0 .86-.71 1.57-1.57 1.57H11l-4 5v-5H3.57C2.71 23 2 22.29 2 21.43v-8.86c0-.86.71-1.57 1.57-1.57h15.86m0-2H3.57C1.602 9 0 10.6 0 12.57v8.86C0 23.398 1.602 25 3.57 25H5v3c0 .85.536 1.606 1.338 1.887.217.076.44.113.662.113.596 0 1.175-.267 1.562-.75l3.4-4.25h7.47C21.4 25 23 23.398 23 21.43v-8.86C23 10.6 21.397 9 19.43 9z" class="style-scope d2l-icon"></path><path d="M30 3.57v8.86C30 14.4 28.4 16 26.43 16H26c-.55 0-1-.45-1-1s.45-1 1-1h.43c.86 0 1.57-.71 1.57-1.57V3.57C28 2.71 27.29 2 26.43 2H10.57C9.71 2 9 2.71 9 3.57V6c0 .55-.45 1-1 1s-1-.45-1-1V3.57C7 1.6 8.6 0 10.57 0h15.86C28.4 0 30 1.6 30 3.57zM18.5 16h-14c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h14c.276 0 .5.224.5.5s-.224.5-.5.5zM14.5 19h-10c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h10c.276 0 .5.224.5.5s-.224.5-.5.5z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span class="d2l-navigation-button-notification-indicator style-scope d2l-navigation-button-notification-icon"><div class="d2l-navigation-button-notification-indicator-icon style-scope d2l-navigation-button-notification-icon"></div></span></span></button><span class="d2l-offscreen-description style-scope d2l-navigation-button" id="d2l-uid-4"> </span></d2l-navigation-button></d2l-navigation-button-notification-icon><d2l-dropdown-content no-padding="" vertical-offset="0" d2l-dropdown-content="" class="x-scope d2l-dropdown-content-1"><div class="d2l-dropdown-content-position style-scope d2l-dropdown-content"><div class="d2l-dropdown-content-width style-scope d2l-dropdown-content"><div class="d2l-dropdown-content-top style-scope d2l-dropdown-content"></div><div class="d2l-dropdown-content-container style-scope d2l-dropdown-content"><template is="dom-if" class="style-scope d2l-dropdown-content"></template></div><div class="d2l-dropdown-content-bottom style-scope d2l-dropdown-content"></div></div></div><div class="d2l-dropdown-content-pointer style-scope d2l-dropdown-content"><div class="style-scope d2l-dropdown-content"></div></div></d2l-dropdown-content></d2l-dropdown></div><div class="d2l-navigation-s-notification" data-category="grades" data-aria-message="You have new Updates"><d2l-dropdown no-auto-open=""><d2l-navigation-button-notification-icon class="d2l-dropdown-opener x-scope d2l-navigation-button-notification-icon-0" icon="d2l-tier3:notification-bell" text="Update alerts" notification="" notification-text="Update alerts - You have new alerts" data-prl="/d2l/MiniBar/285490/ActivityFeed/GetAlertsDaylight?Category=1" aria-haspopup="true" aria-expanded="false"><d2l-navigation-button class="style-scope d2l-navigation-button-notification-icon x-scope d2l-navigation-button-0" text="Update alerts" aria-haspopup="true" aria-expanded="false"><button class="d2l-focusable style-scope d2l-navigation-button" title="Update alerts" aria-label="Update alerts" aria-describedby="d2l-uid-5" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-button-top-border style-scope d2l-navigation-button"></span><span class="d2l-navigation-button-icon-container style-scope d2l-navigation-button-notification-icon"><d2l-icon class="d2l-navigation-button-icon style-scope d2l-navigation-button-notification-icon x-scope d2l-icon-0" icon="d2l-tier3:notification-bell"><svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path fill="none" d="M25.532 23.71c-1.71-1.71-2.53-3.47-2.53-8.71 0-5.31-3.432-9-8.003-9s-8.004 3.69-8.004 9c0 5.24-.82 7-2.53 8.71-.11.1-.19.2-.25.29H25.78c-.058-.09-.138-.19-.248-.29z" class="style-scope d2l-icon"></path><path d="M9.34 20.974c.263.087.546-.054.634-.316.3-.903.36-1.605.36-3.195 0-3.065.418-4.508 2.52-6.61.195-.194.195-.51 0-.706-.195-.195-.512-.195-.707 0-2.323 2.323-2.814 4.01-2.814 7.317 0 1.484-.052 2.11-.308 2.88-.088.26.054.543.316.63z" class="style-scope d2l-icon"></path><path d="M26.942 22.29c-1.29-1.29-1.94-2.53-1.94-7.29 0-4.32-1.96-7.83-5-9.64V4C20 1.8 18.2 0 16 0h-2c-2.2 0-4 1.8-4 4v1.36C6.957 7.17 4.997 10.68 4.997 15c0 4.76-.65 6-1.94 7.29-1.51 1.51-1.51 3.71.7 3.71h6.34c.46 2.28 2.482 4 4.902 4s4.44-1.72 4.9-4h6.34c2.21 0 2.21-2.2.7-3.71zM12 4c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v.46c-.94-.3-1.95-.46-3-.46s-2.06.16-3 .46V4zm3 24c-1.3 0-2.41-.84-2.82-2h5.64c-.41 1.16-1.52 2-2.82 2zM4.218 24c.06-.09.14-.19.25-.29 1.71-1.71 2.53-3.47 2.53-8.71 0-5.31 3.43-9 8.002-9s8.002 3.69 8.002 9c0 5.24.82 7 2.53 8.71.11.1.19.2.25.29H4.22z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span class="d2l-navigation-button-notification-indicator style-scope d2l-navigation-button-notification-icon"><div class="d2l-navigation-button-notification-indicator-icon style-scope d2l-navigation-button-notification-icon"></div></span></span></button><span class="d2l-offscreen-description style-scope d2l-navigation-button" id="d2l-uid-5">Update alerts - You have new alerts</span></d2l-navigation-button></d2l-navigation-button-notification-icon><d2l-dropdown-content no-padding="" vertical-offset="0" d2l-dropdown-content="" class="x-scope d2l-dropdown-content-1"><div class="d2l-dropdown-content-position style-scope d2l-dropdown-content"><div class="d2l-dropdown-content-width style-scope d2l-dropdown-content"><div class="d2l-dropdown-content-top style-scope d2l-dropdown-content"></div><div class="d2l-dropdown-content-container style-scope d2l-dropdown-content"><template is="dom-if" class="style-scope d2l-dropdown-content"></template></div><div class="d2l-dropdown-content-bottom style-scope d2l-dropdown-content"></div></div></div><div class="d2l-dropdown-content-pointer style-scope d2l-dropdown-content"><div class="style-scope d2l-dropdown-content"></div></div></d2l-dropdown-content></d2l-dropdown></div></div><div class="d2l-navigation-s-notifications-div"></div></div><d2l-navigation-separator class="d2l-navigation-s-notifications-divider x-scope d2l-navigation-separator-0"><d2l-icon icon="d2l-tier2:divider-big" class="style-scope d2l-navigation-separator x-scope d2l-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><circle cx="12.5" cy="1.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="6.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="11.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="16.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="21.5" r="1.5" class="style-scope d2l-icon"></circle></g></svg></d2l-icon></d2l-navigation-separator><div class="d2l-navigation-s-personal-menu"><d2l-dropdown><d2l-navigation-button class="d2l-dropdown-opener x-scope d2l-navigation-button-1" aria-haspopup="true" aria-expanded="false"><button class="d2l-focusable style-scope d2l-navigation-button" aria-describedby="d2l-uid-6" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-button-top-border style-scope d2l-navigation-button"></span><span class="d2l-navigation-s-personal-menu-wrapper"><d2l-icon icon="navigation-42:profile" class="x-scope d2l-icon-0"><svg viewBox="0 0 42 42" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M34 0H8C3.6 0 0 3.6 0 8v26c0 4.4 3.6 8 8 8h26c4.4 0 8-3.6 8-8V8c0-4.4-3.6-8-8-8zm6 34c0 3.31-2.69 6-6 6H8c-3.31 0-6-2.69-6-6V8c0-3.31 2.69-6 6-6h26c3.31 0 6 2.69 6 6v26z" class="style-scope d2l-icon"></path><path d="M8.54 29.67c-.28.37-.45.82-.48 1.34l.04-.54c.07-.22.17-.43.3-.63.04-.06.08-.12.14-.17zM20.4 8.04c-1.29.18-2.53.89-3.47 1.92.89-1.01 2.09-1.77 3.47-1.92zM20.95 6c-.14 0-.29 0-.43.02.07-.01.14-.02.21-.02h.22zM21.4 8.02C21.28 8 21.17 8 21.05 8h.12c.08 0 .15.01.23.02zM24.19 6.79c-.72-.36-1.5-.62-2.31-.73.81.1 1.59.35 2.31.73zM25.16 7.38c-.31-.22-.64-.42-.97-.59.34.17.66.36.97.59zM27.62 27.88v.01c-.34-.05-.65-.1-.95-.14-.06-.01-.14-.02-.24-.03.09.01.17.02.22.02.31.04.63.1.97.14zM15.57 27.72c-.1.01-.18.02-.24.03-.3.04-.61.09-.95.14v-.01c.34-.04.66-.1.97-.14.05 0 .13-.01.22-.02zM17.81 6.79c-.33.17-.66.37-.97.59.31-.23.63-.42.97-.59zM20.12 6.06c-.81.11-1.59.37-2.31.73.72-.38 1.5-.63 2.31-.73zM20.95 8c-.12 0-.23 0-.35.02.08-.01.15-.02.23-.02h.12zM21.48 6.02C21.34 6 21.19 6 21.05 6h.22c.07 0 .14.01.21.02zM25.07 9.96c-.94-1.03-2.18-1.74-3.47-1.92 1.38.15 2.58.91 3.47 1.92zM33.94 31.01c-.03-.52-.2-.97-.48-1.34.06.05.1.11.14.17.13.2.23.41.3.63l.04.54z" class="style-scope d2l-icon"></path><path d="M35.27 28.74c-.54-.83-1.37-1.44-2.31-1.76-.11-.04-.23-.07-.35-.1-1.15-.3-2.3-.55-3.47-.76-.73-.14-1.47-.26-2.21-.36-.37-.05-1.94-.18-1.95-.25-.19-1.15.23-2.31.79-3.32.58-1.01 1.32-1.92 1.87-2.95 1.23-2.26 1.5-5.01.74-7.45-.15-.47-.34-.93-.57-1.37-.06-.11-.12-.23-.19-.34-.3-.51-.65-1-1.05-1.44-.16-.19-.34-.37-.53-.54-.28-.26-.57-.49-.87-.72h-.01c-.31-.22-.64-.42-.97-.59-.72-.36-1.5-.62-2.31-.73-.13-.02-.26-.04-.4-.04-.14-.02-.29-.02-.43-.02h-.1c-.14 0-.29 0-.43.02-.14 0-.27.02-.4.04-.81.11-1.59.37-2.31.73-.33.17-.66.37-.97.59h-.01c-.3.23-.59.46-.87.72-.18.17-.36.35-.53.54-.4.44-.75.93-1.05 1.44-.07.11-.13.23-.19.34-.23.44-.42.9-.57 1.37-.76 2.44-.49 5.19.74 7.45.55 1.03 1.29 1.94 1.87 2.95.56 1.01.98 2.17.79 3.32-.01.07-1.58.2-1.95.25-.74.1-1.48.22-2.21.36-1.17.21-2.32.46-3.47.76-.12.03-.24.06-.35.1-.94.32-1.77.93-2.31 1.76-.47.7-.72 1.55-.73 2.39V35c0 .56.45 1 1 1 .56 0 1-.44 1-1 0 0 0-2.89.06-3.99l.04-.54c.07-.22.17-.43.3-.63.04-.06.08-.12.14-.17.06-.1.15-.19.24-.25.09-.1.18-.17.28-.23.1-.07.2-.13.31-.18.1-.05.2-.09.31-.13l.04-.02.03-.01.04-.01c.04-.01.09-.02.13-.04 1.06-.27 2.12-.5 3.13-.68C15.21 29.92 17.98 31 21 31s5.79-1.08 7.95-2.88c1.01.18 2.07.41 3.13.68.04.02.09.03.13.04l.07.02c.12.04.24.09.35.15.11.05.21.11.31.18.1.06.19.13.28.23.09.06.18.15.24.25.06.05.1.11.14.17.13.2.23.41.3.63l.04.54C34 32.11 34 35 34 35c0 .56.44 1 1 1 .55 0 1-.44 1-1v-3.87c-.01-.84-.26-1.69-.73-2.39zM21 30c-2.47 0-4.75-.78-6.62-2.11v-.01c.34-.04.66-.1.97-.14.05 0 .13-.01.22-.02s.21-.02.32-.03c1.55-.17 2.89-.31 3.11-1.89.22-1.43-.12-2.97-1.03-4.59-.31-.55-.64-1.04-.96-1.52-.33-.48-.64-.94-.88-1.39-.98-1.79-1.2-3.99-.6-5.91.13-.41.31-.82.53-1.22.07-.12.14-.23.21-.35.11-.17.24-.35.37-.51.09-.12.19-.24.29-.35.89-1.01 2.09-1.77 3.47-1.92.07-.02.13-.02.2-.02.08-.01.15-.02.23-.02h.34c.08 0 .15.01.23.02.07 0 .14.01.2.02 1.38.15 2.58.91 3.47 1.92.1.11.2.23.29.35.13.17.26.34.37.51.07.12.14.23.21.35.22.38.4.79.53 1.22.6 1.92.38 4.12-.59 5.89-.25.47-.56.93-.89 1.41-.32.48-.65.97-.96 1.52-.91 1.62-1.25 3.16-1.03 4.59.22 1.58 1.56 1.72 3.11 1.89.11.01.23.02.32.03.09.01.17.02.22.02.31.04.63.1.97.14v.01C25.75 29.22 23.47 30 21 30z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span class="d2l-navigation-s-personal-menu-text">Li Ming Hong</span></span></button><span class="d2l-offscreen-description style-scope d2l-navigation-button" id="d2l-uid-6"> </span></d2l-navigation-button><d2l-dropdown-content min-width="300" no-padding="" vertical-offset="0" render-content="render-content" d2l-dropdown-content="" class="x-scope d2l-dropdown-content-1"><div class="d2l-dropdown-content-position style-scope d2l-dropdown-content"><div class="d2l-dropdown-content-width style-scope d2l-dropdown-content" style="min-width: 300px;"><div class="d2l-dropdown-content-top style-scope d2l-dropdown-content"></div><div class="d2l-dropdown-content-container style-scope d2l-dropdown-content" style="min-width: 300px;"><div>
+			<ul class="d2l-list">
+				<li>
+					<ul style="list-style:none;margin:10px;padding:0;">
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="https://learn.sait.ca/d2l/lp/profile/profile_edit.d2l?ou=285490" onclick="D2L.O(&quot;__g1&quot;,0)();">Profile</a>
+							</span></li>
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="https://learn.sait.ca/d2l/Notifications/Settings?ou=285490" onclick="D2L.O(&quot;__g1&quot;,1)();">Notifications</a>
+							</span></li>
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="https://learn.sait.ca/d2l/lp/preferences/preferences_main/preferences_main.d2l?ou=285490" onclick="D2L.O(&quot;__g1&quot;,2)();">Preferences</a>
+							</span></li>
+					</ul>
+					<hr class="d2l-minibar-menu-separator"></li>
+				<li>
+					<ul style="list-style:none;margin:10px;padding:0;">
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="https://learn.sait.ca/d2l/le/userprogress/506656/285490/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0">Progress</a>
+							</span></li>
+					</ul>
+					<hr class="d2l-minibar-menu-separator"></li>
+				<li>
+					<span style="white-space:nowrap;"><a class="d2l-link d2l_1_11_391" href="javascript:void(0);" onclick="D2L.O(&quot;__g1&quot;,3)();return false;">Log Out</a>
+					</span></li>
+			</ul>
+		</div>
+		<template is="dom-if" class="style-scope d2l-dropdown-content"></template></div><div class="d2l-dropdown-content-bottom style-scope d2l-dropdown-content"></div></div></div><div class="d2l-dropdown-content-pointer style-scope d2l-dropdown-content"><div class="style-scope d2l-dropdown-content"></div></div></d2l-dropdown-content></d2l-dropdown></div></div></div></div></div></d2l-navigation-main-header><d2l-navigation-main-footer class="d2l-navigation-main-footer-container d2l-branding-navigation-background-color"><div class="d2l-navigation-centerer d2l-visible-on-ancestor-target style-scope d2l-navigation-main-footer"><div class="d2l-navigation-gutters style-scope d2l-navigation-main-footer"><div slot="main"><div class="d2l-navigation-s-main-wrapper" role="list"><div class="d2l-navigation-s-item" role="listitem"><a href="https://learn.sait.ca/d2l/lp/ouHome/defaultHome.d2l" class="d2l-navigation-s-link">My Home</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="https://login.microsoftonline.com/" data-popup-menubar="1" data-popup-toolbar="1" data-popup-height="480" data-popup-width="640" class="d2l-navigation-s-link d2l-navigation-s-link-popup">Office 365</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="https://learn.sait.ca/d2l/home/285490" class="d2l-navigation-s-link">Course Home</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="https://learn.sait.ca/d2l/le/content/285490/Home" class="d2l-navigation-s-link">Content</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Assessments</span><d2l-icon icon="d2l-tier1:chevron-down" class="x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M2.39 6.49a1.5 1.5 0 0 1 2.12-.1L9 10.47l4.49-4.08a1.5 1.5 0 0 1 2.02 2.22L10 13.62A1.474 1.474 0 0 1 9 14a1.523 1.523 0 0 1-1-.38L2.49 8.61a1.5 1.5 0 0 1-.1-2.12z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></span></button><d2l-dropdown-menu render-content="render-content" d2l-dropdown-content="" no-auto-focus="" no-padding="" class="x-scope d2l-dropdown-menu-0"><div class="d2l-dropdown-content-position style-scope d2l-dropdown-menu" style="left: 58.3359px;"><div class="d2l-dropdown-content-width style-scope d2l-dropdown-menu" style="width: 20px;"><div class="d2l-dropdown-content-top style-scope d2l-dropdown-menu"></div><div class="d2l-dropdown-content-container style-scope d2l-dropdown-menu" style="max-height: 706px; width: 18px;"><d2l-menu role="menu" aria-label="undefined" class="x-scope d2l-menu-0" active="" style="height: 0px;"><div class="d2l-menu-items d2l-hierarchical-view-content style-scope d2l-menu"><d2l-menu-item-link href="/d2l/lms/dropbox/dropbox.d2l?ou=285490" class="d2l-navigation-s-menu-item-root d2l-menu-item-first" text="Assignments" aria-label="Assignments" role="menuitem" tabindex="0"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/dropbox/dropbox.d2l?ou=285490">Assignments</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/quizzing/quizzing.d2l?ou=285490" class="d2l-navigation-s-menu-item-root" text="Tests" aria-label="Tests" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/quizzing/quizzing.d2l?ou=285490">Tests</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/checklist/checklists.d2l?ou=285490" class="d2l-navigation-s-menu-item-root" text="Checklist" aria-label="Checklist" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/checklist/checklists.d2l?ou=285490">Checklist</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/grades/index.d2l?ou=285490" class="d2l-navigation-s-menu-item-root d2l-menu-item-last" text="Grades" aria-label="Grades" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/grades/index.d2l?ou=285490">Grades</a></d2l-menu-item-link></div></d2l-menu><template is="dom-if" class="style-scope d2l-dropdown-menu"></template></div><div class="d2l-dropdown-content-bottom style-scope d2l-dropdown-menu"></div></div></div><div class="d2l-dropdown-content-pointer style-scope d2l-dropdown-menu"><div class="style-scope d2l-dropdown-menu"></div></div></d2l-dropdown-menu></d2l-dropdown></div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Communication</span><d2l-icon icon="d2l-tier1:chevron-down" class="x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M2.39 6.49a1.5 1.5 0 0 1 2.12-.1L9 10.47l4.49-4.08a1.5 1.5 0 0 1 2.02 2.22L10 13.62A1.474 1.474 0 0 1 9 14a1.523 1.523 0 0 1-1-.38L2.49 8.61a1.5 1.5 0 0 1-.1-2.12z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></span></button><d2l-dropdown-menu render-content="render-content" d2l-dropdown-content="" no-auto-focus="" no-padding="" class="x-scope d2l-dropdown-menu-0"><div class="d2l-dropdown-content-position style-scope d2l-dropdown-menu" style="left: 69.5469px;"><div class="d2l-dropdown-content-width style-scope d2l-dropdown-menu" style="width: 20px;"><div class="d2l-dropdown-content-top style-scope d2l-dropdown-menu"></div><div class="d2l-dropdown-content-container style-scope d2l-dropdown-menu" style="max-height: 706px; width: 18px;"><d2l-menu role="menu" aria-label="undefined" class="x-scope d2l-menu-0" active="" style="height: 0px;"><div class="d2l-menu-items d2l-hierarchical-view-content style-scope d2l-menu"><d2l-menu-item-link href="/d2l/le/285490/discussions/List" class="d2l-navigation-s-menu-item-root d2l-menu-item-first" text="Discussions" aria-label="Discussions" role="menuitem" tabindex="0"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/le/285490/discussions/List">Discussions</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/email/frame.d2l?ou=285490" class="d2l-navigation-s-menu-item-root" text="Email" aria-label="Email" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/email/frame.d2l?ou=285490">Email</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/news/main.d2l?ou=285490" class="d2l-navigation-s-menu-item-root" text="News" aria-label="News" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/news/main.d2l?ou=285490">News</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/chat/chat_list.d2l?ou=285490" class="d2l-navigation-s-menu-item-root d2l-menu-item-last" text="Chat" aria-label="Chat" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/chat/chat_list.d2l?ou=285490">Chat</a></d2l-menu-item-link></div></d2l-menu><template is="dom-if" class="style-scope d2l-dropdown-menu"></template></div><div class="d2l-dropdown-content-bottom style-scope d2l-dropdown-menu"></div></div></div><div class="d2l-dropdown-content-pointer style-scope d2l-dropdown-menu"><div class="style-scope d2l-dropdown-menu"></div></div></d2l-dropdown-menu></d2l-dropdown></div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Course Tools</span><d2l-icon icon="d2l-tier1:chevron-down" class="x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M2.39 6.49a1.5 1.5 0 0 1 2.12-.1L9 10.47l4.49-4.08a1.5 1.5 0 0 1 2.02 2.22L10 13.62A1.474 1.474 0 0 1 9 14a1.523 1.523 0 0 1-1-.38L2.49 8.61a1.5 1.5 0 0 1-.1-2.12z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></span></button><d2l-dropdown-menu render-content="render-content" d2l-dropdown-content="" no-auto-focus="" no-padding="" class="x-scope d2l-dropdown-menu-0"><div class="d2l-dropdown-content-position style-scope d2l-dropdown-menu" style="left: 58.3516px;"><div class="d2l-dropdown-content-width style-scope d2l-dropdown-menu" style="width: 20px;"><div class="d2l-dropdown-content-top style-scope d2l-dropdown-menu"></div><div class="d2l-dropdown-content-container style-scope d2l-dropdown-menu" style="max-height: 706px; width: 18px;"><d2l-menu role="menu" aria-label="undefined" class="x-scope d2l-menu-0" active="" style="height: 0px;"><div class="d2l-menu-items d2l-hierarchical-view-content style-scope d2l-menu"><d2l-menu-item-link href="/d2l/lms/attendance/index.d2l?ou=285490" class="d2l-navigation-s-menu-item-root d2l-menu-item-first" text="Attendance" aria-label="Attendance" role="menuitem" tabindex="0"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/attendance/index.d2l?ou=285490">Attendance</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/le/userprogress/506656/285490/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0" class="d2l-navigation-s-menu-item-root" text="User Progress" aria-label="User Progress" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/le/userprogress/506656/285490/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0">User Progress</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/classlist/classlist.d2l?ou=285490" class="d2l-navigation-s-menu-item-root" text="Classlist" aria-label="Classlist" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/classlist/classlist.d2l?ou=285490">Classlist</a></d2l-menu-item-link><d2l-menu-item-link href="https://learn.sait.ca/d2l/le/calendar/%7BOrgUnitId%7D?ou=%7bOrgUnitId%7d" class="d2l-navigation-s-menu-item-root" text="Calendar" aria-label="Calendar" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/le/calendar/%7BOrgUnitId%7D?ou=%7bOrgUnitId%7d">Calendar</a></d2l-menu-item-link><d2l-menu-item href="/d2l/lms/glossary/glossary.d2l?ou=285490" data-popup-height="600" data-popup-width="800" class="d2l-navigation-s-menu-item-root d2l-navigation-s-link-popup" text="Glossary" aria-label="Glossary" role="menuitem" tabindex="-1"><span class="style-scope d2l-menu-item">Glossary</span></d2l-menu-item><d2l-menu-item-link href="/d2l/lms/group/group_list.d2l?ou=285490" class="d2l-navigation-s-menu-item-root" text="Groups" aria-label="Groups" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/group/group_list.d2l?ou=285490">Groups</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/locker/locker.d2l?ou=285490" class="d2l-navigation-s-menu-item-root" text="My Files" aria-label="My Files" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/locker/locker.d2l?ou=285490">My Files</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/awards/285490/" class="d2l-navigation-s-menu-item-root" text="Awards" aria-label="Awards" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/awards/285490/">Awards</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/survey/surveys.d2l?ou=285490" class="d2l-navigation-s-menu-item-root d2l-menu-item-last" text="Survey" aria-label="Survey" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/survey/surveys.d2l?ou=285490">Survey</a></d2l-menu-item-link></div></d2l-menu><template is="dom-if" class="style-scope d2l-dropdown-menu"></template></div><div class="d2l-dropdown-content-bottom style-scope d2l-dropdown-menu"></div></div></div><div class="d2l-dropdown-content-pointer style-scope d2l-dropdown-menu"><div class="style-scope d2l-dropdown-menu"></div></div></d2l-dropdown-menu></d2l-dropdown></div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="http://www.sait.ca/student-life/reg-erhardt-library/reg-erhardt-library" data-popup-menubar="1" data-popup-toolbar="1" class="d2l-navigation-s-link d2l-navigation-s-link-popup">SAIT Library</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="https://learn.sait.ca/d2l/lp/cmc/main.d2l?ou=285490" class="d2l-navigation-s-link">Edit Course</a></div>
+		<div class="d2l-navigation-s-item d2l-navigation-s-more" role="listitem" data-hidden="1"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">More</span><d2l-icon icon="d2l-tier1:chevron-down" class="x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M2.39 6.49a1.5 1.5 0 0 1 2.12-.1L9 10.47l4.49-4.08a1.5 1.5 0 0 1 2.02 2.22L10 13.62A1.474 1.474 0 0 1 9 14a1.523 1.523 0 0 1-1-.38L2.49 8.61a1.5 1.5 0 0 1-.1-2.12z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></span></button><d2l-dropdown-menu render-content="render-content" d2l-dropdown-content="" no-auto-focus="" no-padding="" class="x-scope d2l-dropdown-menu-0"><div class="d2l-dropdown-content-position style-scope d2l-dropdown-menu" style="left: 0px;"><div class="d2l-dropdown-content-width style-scope d2l-dropdown-menu" style="width: 20px;"><div class="d2l-dropdown-content-top style-scope d2l-dropdown-menu"></div><div class="d2l-dropdown-content-container style-scope d2l-dropdown-menu" style="max-height: 840px; width: 18px;"><d2l-menu role="menu" aria-label="undefined" class="x-scope d2l-menu-0" active="" style="height: 0px;"><div class="d2l-menu-items d2l-hierarchical-view-content style-scope d2l-menu"><d2l-menu-item-link href="/d2l/lp/ouHome/defaultHome.d2l" class="d2l-navigation-s-menu-item-root d2l-menu-item-first d2l-hidden" text="My Home" aria-label="My Home" role="menuitem" tabindex="0"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lp/ouHome/defaultHome.d2l">My Home</a></d2l-menu-item-link><d2l-menu-item href="https://login.microsoftonline.com" data-popup-menubar="1" data-popup-toolbar="1" data-popup-height="480" data-popup-width="640" class="d2l-navigation-s-menu-item-root d2l-navigation-s-link-popup d2l-hidden" text="Office 365" aria-label="Office 365" role="menuitem" tabindex="-1"><span class="style-scope d2l-menu-item">Office 365</span></d2l-menu-item><d2l-menu-item-link href="/d2l/home/285490" class="d2l-navigation-s-menu-item-root d2l-hidden" text="Course Home" aria-label="Course Home" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/home/285490">Course Home</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/le/content/285490/Home" class="d2l-navigation-s-menu-item-root d2l-hidden" text="Content" aria-label="Content" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/le/content/285490/Home">Content</a></d2l-menu-item-link><d2l-menu-item class="d2l-navigation-s-menu-item-root d2l-hidden" text="Assessments" aria-label="Assessments" role="menuitem" tabindex="-1" aria-haspopup="true"><span class="style-scope d2l-menu-item">Assessments</span><d2l-menu role="menu" label="Assessments" aria-label="Assessments" class="x-scope d2l-menu-0" child-view=""><div class="d2l-menu-items d2l-hierarchical-view-content style-scope d2l-menu"><d2l-menu-item-return role="menuitem" tabindex="0" arialabel="Returns to previous menu.  You are viewing Assessments." text="Assessments" class="style-scope d2l-menu d2l-menu-item-first"><d2l-icon icon="d2l-tier1:chevron-left" class="style-scope d2l-menu-item-return x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M9.39 15.51L4.38 10A1.524 1.524 0 0 1 4 9a1.474 1.474 0 0 1 .38-1l5.01-5.51a1.5 1.5 0 0 1 2.22 2.02L7.53 9l4.08 4.49a1.5 1.5 0 0 1-2.22 2.02z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span aria-hidden="" class="style-scope d2l-menu-item-return">Assessments</span></d2l-menu-item-return><d2l-menu-item-link href="/d2l/lms/dropbox/dropbox.d2l?ou=285490" text="Assignments" aria-label="Assignments" role="menuitem" tabindex="-1" class=""><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/dropbox/dropbox.d2l?ou=285490">Assignments</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/quizzing/quizzing.d2l?ou=285490" text="Tests" aria-label="Tests" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/quizzing/quizzing.d2l?ou=285490">Tests</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/checklist/checklists.d2l?ou=285490" text="Checklist" aria-label="Checklist" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/checklist/checklists.d2l?ou=285490">Checklist</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/grades/index.d2l?ou=285490" text="Grades" aria-label="Grades" role="menuitem" tabindex="-1" class="d2l-menu-item-last"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/grades/index.d2l?ou=285490">Grades</a></d2l-menu-item-link></div></d2l-menu><d2l-icon icon="d2l-tier1:chevron-right" class="style-scope d2l-menu-item x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M5.49 15.61a1.5 1.5 0 0 1-.1-2.12L9.47 9 5.39 4.51a1.5 1.5 0 1 1 2.22-2.02L12.62 8A1.474 1.474 0 0 1 13 9a1.524 1.524 0 0 1-.38 1l-5.01 5.51a1.5 1.5 0 0 1-2.12.1z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></d2l-menu-item><d2l-menu-item class="d2l-navigation-s-menu-item-root d2l-hidden" text="Communication" aria-label="Communication" role="menuitem" tabindex="-1" aria-haspopup="true"><span class="style-scope d2l-menu-item">Communication</span><d2l-menu role="menu" label="Communication" aria-label="Communication" class="x-scope d2l-menu-0" child-view=""><div class="d2l-menu-items d2l-hierarchical-view-content style-scope d2l-menu"><d2l-menu-item-return role="menuitem" tabindex="0" arialabel="Returns to previous menu.  You are viewing Communication." text="Communication" class="style-scope d2l-menu d2l-menu-item-first"><d2l-icon icon="d2l-tier1:chevron-left" class="style-scope d2l-menu-item-return x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M9.39 15.51L4.38 10A1.524 1.524 0 0 1 4 9a1.474 1.474 0 0 1 .38-1l5.01-5.51a1.5 1.5 0 0 1 2.22 2.02L7.53 9l4.08 4.49a1.5 1.5 0 0 1-2.22 2.02z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span aria-hidden="" class="style-scope d2l-menu-item-return">Communication</span></d2l-menu-item-return><d2l-menu-item-link href="/d2l/le/285490/discussions/List" text="Discussions" aria-label="Discussions" role="menuitem" tabindex="-1" class=""><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/le/285490/discussions/List">Discussions</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/email/frame.d2l?ou=285490" text="Email" aria-label="Email" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/email/frame.d2l?ou=285490">Email</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/news/main.d2l?ou=285490" text="News" aria-label="News" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/news/main.d2l?ou=285490">News</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/chat/chat_list.d2l?ou=285490" text="Chat" aria-label="Chat" role="menuitem" tabindex="-1" class="d2l-menu-item-last"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/chat/chat_list.d2l?ou=285490">Chat</a></d2l-menu-item-link></div></d2l-menu><d2l-icon icon="d2l-tier1:chevron-right" class="style-scope d2l-menu-item x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M5.49 15.61a1.5 1.5 0 0 1-.1-2.12L9.47 9 5.39 4.51a1.5 1.5 0 1 1 2.22-2.02L12.62 8A1.474 1.474 0 0 1 13 9a1.524 1.524 0 0 1-.38 1l-5.01 5.51a1.5 1.5 0 0 1-2.12.1z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></d2l-menu-item><d2l-menu-item class="d2l-navigation-s-menu-item-root d2l-hidden" text="Course Tools" aria-label="Course Tools" role="menuitem" tabindex="-1" aria-haspopup="true"><span class="style-scope d2l-menu-item">Course Tools</span><d2l-menu role="menu" label="Course Tools" aria-label="Course Tools" class="x-scope d2l-menu-0" child-view=""><div class="d2l-menu-items d2l-hierarchical-view-content style-scope d2l-menu"><d2l-menu-item-return role="menuitem" tabindex="0" arialabel="Returns to previous menu.  You are viewing Course Tools." text="Course Tools" class="style-scope d2l-menu d2l-menu-item-first"><d2l-icon icon="d2l-tier1:chevron-left" class="style-scope d2l-menu-item-return x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M9.39 15.51L4.38 10A1.524 1.524 0 0 1 4 9a1.474 1.474 0 0 1 .38-1l5.01-5.51a1.5 1.5 0 0 1 2.22 2.02L7.53 9l4.08 4.49a1.5 1.5 0 0 1-2.22 2.02z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span aria-hidden="" class="style-scope d2l-menu-item-return">Course Tools</span></d2l-menu-item-return><d2l-menu-item-link href="/d2l/lms/attendance/index.d2l?ou=285490" text="Attendance" aria-label="Attendance" role="menuitem" tabindex="-1" class=""><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/attendance/index.d2l?ou=285490">Attendance</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/le/userprogress/506656/285490/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0" text="User Progress" aria-label="User Progress" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/le/userprogress/506656/285490/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0">User Progress</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/classlist/classlist.d2l?ou=285490" text="Classlist" aria-label="Classlist" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/classlist/classlist.d2l?ou=285490">Classlist</a></d2l-menu-item-link><d2l-menu-item-link href="https://learn.sait.ca/d2l/le/calendar/%7BOrgUnitId%7D?ou=%7bOrgUnitId%7d" text="Calendar" aria-label="Calendar" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/le/calendar/%7BOrgUnitId%7D?ou=%7bOrgUnitId%7d">Calendar</a></d2l-menu-item-link><d2l-menu-item href="/d2l/lms/glossary/glossary.d2l?ou=285490" data-popup-height="600" data-popup-width="800" class="d2l-navigation-s-link-popup" text="Glossary" aria-label="Glossary" role="menuitem" tabindex="-1"><span class="style-scope d2l-menu-item">Glossary</span></d2l-menu-item><d2l-menu-item-link href="/d2l/lms/group/group_list.d2l?ou=285490" text="Groups" aria-label="Groups" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/group/group_list.d2l?ou=285490">Groups</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/locker/locker.d2l?ou=285490" text="My Files" aria-label="My Files" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/locker/locker.d2l?ou=285490">My Files</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/awards/285490/" text="Awards" aria-label="Awards" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/awards/285490/">Awards</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/survey/surveys.d2l?ou=285490" text="Survey" aria-label="Survey" role="menuitem" tabindex="-1" class="d2l-menu-item-last"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/survey/surveys.d2l?ou=285490">Survey</a></d2l-menu-item-link></div></d2l-menu><d2l-icon icon="d2l-tier1:chevron-right" class="style-scope d2l-menu-item x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M5.49 15.61a1.5 1.5 0 0 1-.1-2.12L9.47 9 5.39 4.51a1.5 1.5 0 1 1 2.22-2.02L12.62 8A1.474 1.474 0 0 1 13 9a1.524 1.524 0 0 1-.38 1l-5.01 5.51a1.5 1.5 0 0 1-2.12.1z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></d2l-menu-item><d2l-menu-item href="http://www.sait.ca/student-life/reg-erhardt-library/reg-erhardt-library" data-popup-menubar="1" data-popup-toolbar="1" class="d2l-navigation-s-menu-item-root d2l-navigation-s-link-popup d2l-hidden" text="SAIT Library" aria-label="SAIT Library" role="menuitem" tabindex="-1"><span class="style-scope d2l-menu-item">SAIT Library</span></d2l-menu-item><d2l-menu-item-link href="/d2l/lp/cmc/main.d2l?ou=285490" class="d2l-navigation-s-menu-item-root d2l-menu-item-last d2l-hidden" text="Edit Course" aria-label="Edit Course" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lp/cmc/main.d2l?ou=285490">Edit Course</a></d2l-menu-item-link></div></d2l-menu><template is="dom-if" class="style-scope d2l-dropdown-menu"></template></div><div class="d2l-dropdown-content-bottom style-scope d2l-dropdown-menu"></div></div></div><div class="d2l-dropdown-content-pointer style-scope d2l-dropdown-menu"><div class="style-scope d2l-dropdown-menu"></div></div></d2l-dropdown-menu></d2l-dropdown></div>
+		</div></div></div></div></d2l-navigation-main-footer><div class="d2l-navigation-s-mobile-menu" data-state="closed" data-cprl="/d2l/lp/courseSelector/285490/InitPartial"><div class="d2l-navigation-s-mobile-menu-mask"><div class="d2l-navigation-s-mobile-menu-focus-trap-start d2l-offscreen" tabindex="0">Menu Start</div><p class="d2l-navigation-s-mobile-menu-first d2l-offscreen" tabindex="-1">Menu Start</p><div class="d2l-navigation-s-mobile-menu-mask-close"><button class="d2l-navigation-s-button"><d2l-icon icon="d2l-tier1:close-large-thick" class="x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M17.558 15.44a1.49 1.49 0 0 1 0 2.12 1.5 1.5 0 0 1-2.12 0L9 11.12l-6.438 6.44a1.5 1.5 0 0 1-2.12 0 1.49 1.49 0 0 1 0-2.12L6.88 9 .442 2.563a1.5 1.5 0 0 1 2.12-2.12L9 6.883l6.438-6.44a1.5 1.5 0 0 1 2.12 2.12L11.12 9z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span class="d2l-navigation-s-button-text">close</span></button></div></div><div class="d2l-navigation-s-mobile-menu-content"><d2l-navigation-band class="x-scope d2l-navigation-band-0"></d2l-navigation-band><div class="d2l-navigation-s-mobile-menu-header"><div class="d2l-navigation-s-mobile-menu-branded-header"><div class="d2l-navigation-s-header-logo-area d2l-navigation-s-header-no-home-icon"><d2l-navigation-separator class="d2l-navigation-s-logo-divider x-scope d2l-navigation-separator-0"><d2l-icon icon="d2l-tier2:divider-big" class="style-scope d2l-navigation-separator x-scope d2l-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><circle cx="12.5" cy="1.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="6.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="11.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="16.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="21.5" r="1.5" class="style-scope d2l-icon"></circle></g></svg></d2l-icon></d2l-navigation-separator><div class="d2l-navigation-s-logo"><d2l-navigation-link-image src="/d2l/lp/navbars/6605/theme/viewimage/3208789/view?v=10.8.9.14571-201" text="My Home" href="/d2l/lp/ouHome/defaultHome.d2l"><d2l-navigation-link class="style-scope d2l-navigation-link-image x-scope d2l-navigation-link-0" href="/d2l/lp/ouHome/defaultHome.d2l"><a class="d2l-focusable style-scope d2l-navigation-link" href="https://learn.sait.ca/d2l/lp/ouHome/defaultHome.d2l" title="My Home"><span class="d2l-navigation-link-top-border style-scope d2l-navigation-link"></span><template is="dom-if" class="style-scope d2l-navigation-link"></template><span class="d2l-navigation-link-image-container style-scope d2l-navigation-link-image"><img class="style-scope d2l-navigation-link-image" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/sait.logo.png" alt="My Home"></span></a></d2l-navigation-link></d2l-navigation-link-image></div><d2l-navigation-separator class="d2l-navigation-s-title-divider x-scope d2l-navigation-separator-0"><d2l-icon icon="d2l-tier2:divider-big" class="style-scope d2l-navigation-separator x-scope d2l-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><circle cx="12.5" cy="1.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="6.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="11.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="16.5" r="1.5" class="style-scope d2l-icon"></circle><circle cx="12.5" cy="21.5" r="1.5" class="style-scope d2l-icon"></circle></g></svg></d2l-icon></d2l-navigation-separator><div class="d2l-navigation-s-title-container"><a class="d2l-navigation-s-link" href="https://learn.sait.ca/d2l/home/285490" title="CPRG-210-OSD - Web Application Development">CPRG-210-OSD - Web Application Development</a></div></div><div class="d2l-navigation-s-gutter"></div><div class="d2l-navigation-s-mobile-menu-course-selector"><d2l-navigation-button-notification-icon icon="d2l-tier3:classes" text="Select a course..." class="x-scope d2l-navigation-button-notification-icon-0"><d2l-navigation-button class="style-scope d2l-navigation-button-notification-icon x-scope d2l-navigation-button-0" text="Select a course..."><button class="d2l-focusable style-scope d2l-navigation-button" title="Select a course..." aria-label="Select a course..." aria-describedby="d2l-uid-7"><span class="d2l-navigation-button-top-border style-scope d2l-navigation-button"></span><span class="d2l-navigation-button-icon-container style-scope d2l-navigation-button-notification-icon"><d2l-icon class="d2l-navigation-button-icon style-scope d2l-navigation-button-notification-icon x-scope d2l-icon-0" icon="d2l-tier3:classes"><svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M2.668 21c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488H2.668zM3 23h4v4H3v-4zM2.668 1c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18V2.668c0-.462-.187-.878-.488-1.18C8.21 1.188 7.794 1 7.332 1H2.668zM3 3h4v4H3V3zM2.668 11c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488H2.668zM3 13h4v4H3v-4zM12.668 21c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM13 23h4v4h-4v-4zM12.668 1c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18V2.668c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM13 3h4v4h-4V3zM12.668 11c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM13 13h4v4h-4v-4zM22.668 21c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM23 23h4v4h-4v-4zM22.668 1c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18V2.668c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM23 3h4v4h-4V3zM22.668 11c-.462 0-.878.187-1.18.488-.3.302-.488.718-.488 1.18v4.664c0 .462.187.878.488 1.18.302.3.718.488 1.18.488h4.664c.462 0 .878-.187 1.18-.488.3-.302.488-.718.488-1.18v-4.664c0-.462-.187-.878-.488-1.18-.302-.3-.718-.488-1.18-.488h-4.664zM23 13h4v4h-4v-4z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span class="d2l-navigation-button-notification-indicator style-scope d2l-navigation-button-notification-icon"><div class="d2l-navigation-button-notification-indicator-icon style-scope d2l-navigation-button-notification-icon"></div></span></span></button><span class="d2l-offscreen-description style-scope d2l-navigation-button" id="d2l-uid-7"> </span></d2l-navigation-button></d2l-navigation-button-notification-icon></div></div><div class="d2l-navigation-s-mobile-menu-header-course-menu"><button class="d2l-navigation-s-button"><d2l-icon icon="d2l-tier1:chevron-left" class="x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M9.39 15.51L4.38 10A1.524 1.524 0 0 1 4 9a1.474 1.474 0 0 1 .38-1l5.01-5.51a1.5 1.5 0 0 1 2.22 2.02L7.53 9l4.08 4.49a1.5 1.5 0 0 1-2.22 2.02z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span class="d2l-navigation-s-button-text">CPRG-210-OSD - Web Application Development</span></button><div class="d2l-navigation-s-title-container"><span class="d2l-navigation-s-title">CPRG-210-OSD - Web Application Development</span></div></div></div><div class="d2l-navigation-s-title-container d2l-navigation-s-mobile-menu-title-bp d2l-branding-navigation-background-color"><a class="d2l-navigation-s-link" href="https://learn.sait.ca/d2l/home/285490" title="CPRG-210-OSD - Web Application Development">CPRG-210-OSD - Web Application Development</a></div><div class="d2l-navigation-s-mobile-menu-course-menu"></div><div class="d2l-navigation-s-mobile-menu-nav"><d2l-menu label="menu" role="menu" aria-label="menu" class="x-scope d2l-menu-0" active="" style="height: 0px;"><div class="d2l-menu-items d2l-hierarchical-view-content style-scope d2l-menu"><d2l-menu-item-link href="/d2l/lp/ouHome/defaultHome.d2l" text="My Home" aria-label="My Home" role="menuitem" tabindex="0" class="d2l-menu-item-first"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lp/ouHome/defaultHome.d2l">My Home</a></d2l-menu-item-link><d2l-menu-item href="https://login.microsoftonline.com" data-popup-menubar="1" data-popup-toolbar="1" data-popup-height="480" data-popup-width="640" class="d2l-navigation-s-link-popup" text="Office 365" aria-label="Office 365" role="menuitem" tabindex="-1"><span class="style-scope d2l-menu-item">Office 365</span></d2l-menu-item><d2l-menu-item-link href="/d2l/home/285490" text="Course Home" aria-label="Course Home" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/home/285490">Course Home</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/le/content/285490/Home" text="Content" aria-label="Content" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/le/content/285490/Home">Content</a></d2l-menu-item-link><d2l-menu-item text="Assessments" aria-label="Assessments" role="menuitem" tabindex="-1" aria-haspopup="true"><span class="style-scope d2l-menu-item">Assessments</span><d2l-menu role="menu" label="Assessments" aria-label="Assessments" class="x-scope d2l-menu-0" child-view=""><div class="d2l-menu-items d2l-hierarchical-view-content style-scope d2l-menu"><d2l-menu-item-return role="menuitem" tabindex="0" arialabel="Returns to previous menu.  You are viewing Assessments." text="Assessments" class="style-scope d2l-menu d2l-menu-item-first"><d2l-icon icon="d2l-tier1:chevron-left" class="style-scope d2l-menu-item-return x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M9.39 15.51L4.38 10A1.524 1.524 0 0 1 4 9a1.474 1.474 0 0 1 .38-1l5.01-5.51a1.5 1.5 0 0 1 2.22 2.02L7.53 9l4.08 4.49a1.5 1.5 0 0 1-2.22 2.02z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span aria-hidden="" class="style-scope d2l-menu-item-return">Assessments</span></d2l-menu-item-return><d2l-menu-item-link href="/d2l/lms/dropbox/dropbox.d2l?ou=285490" text="Assignments" aria-label="Assignments" role="menuitem" tabindex="-1" class=""><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/dropbox/dropbox.d2l?ou=285490">Assignments</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/quizzing/quizzing.d2l?ou=285490" text="Tests" aria-label="Tests" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/quizzing/quizzing.d2l?ou=285490">Tests</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/checklist/checklists.d2l?ou=285490" text="Checklist" aria-label="Checklist" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/checklist/checklists.d2l?ou=285490">Checklist</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/grades/index.d2l?ou=285490" text="Grades" aria-label="Grades" role="menuitem" tabindex="-1" class="d2l-menu-item-last"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/grades/index.d2l?ou=285490">Grades</a></d2l-menu-item-link></div></d2l-menu><d2l-icon icon="d2l-tier1:chevron-right" class="style-scope d2l-menu-item x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M5.49 15.61a1.5 1.5 0 0 1-.1-2.12L9.47 9 5.39 4.51a1.5 1.5 0 1 1 2.22-2.02L12.62 8A1.474 1.474 0 0 1 13 9a1.524 1.524 0 0 1-.38 1l-5.01 5.51a1.5 1.5 0 0 1-2.12.1z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></d2l-menu-item><d2l-menu-item text="Communication" aria-label="Communication" role="menuitem" tabindex="-1" aria-haspopup="true"><span class="style-scope d2l-menu-item">Communication</span><d2l-menu role="menu" label="Communication" aria-label="Communication" class="x-scope d2l-menu-0" child-view=""><div class="d2l-menu-items d2l-hierarchical-view-content style-scope d2l-menu"><d2l-menu-item-return role="menuitem" tabindex="0" arialabel="Returns to previous menu.  You are viewing Communication." text="Communication" class="style-scope d2l-menu d2l-menu-item-first"><d2l-icon icon="d2l-tier1:chevron-left" class="style-scope d2l-menu-item-return x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M9.39 15.51L4.38 10A1.524 1.524 0 0 1 4 9a1.474 1.474 0 0 1 .38-1l5.01-5.51a1.5 1.5 0 0 1 2.22 2.02L7.53 9l4.08 4.49a1.5 1.5 0 0 1-2.22 2.02z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span aria-hidden="" class="style-scope d2l-menu-item-return">Communication</span></d2l-menu-item-return><d2l-menu-item-link href="/d2l/le/285490/discussions/List" text="Discussions" aria-label="Discussions" role="menuitem" tabindex="-1" class=""><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/le/285490/discussions/List">Discussions</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/email/frame.d2l?ou=285490" text="Email" aria-label="Email" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/email/frame.d2l?ou=285490">Email</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/news/main.d2l?ou=285490" text="News" aria-label="News" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/news/main.d2l?ou=285490">News</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/chat/chat_list.d2l?ou=285490" text="Chat" aria-label="Chat" role="menuitem" tabindex="-1" class="d2l-menu-item-last"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/chat/chat_list.d2l?ou=285490">Chat</a></d2l-menu-item-link></div></d2l-menu><d2l-icon icon="d2l-tier1:chevron-right" class="style-scope d2l-menu-item x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M5.49 15.61a1.5 1.5 0 0 1-.1-2.12L9.47 9 5.39 4.51a1.5 1.5 0 1 1 2.22-2.02L12.62 8A1.474 1.474 0 0 1 13 9a1.524 1.524 0 0 1-.38 1l-5.01 5.51a1.5 1.5 0 0 1-2.12.1z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></d2l-menu-item><d2l-menu-item text="Course Tools" aria-label="Course Tools" role="menuitem" tabindex="-1" aria-haspopup="true"><span class="style-scope d2l-menu-item">Course Tools</span><d2l-menu role="menu" label="Course Tools" aria-label="Course Tools" class="x-scope d2l-menu-0" child-view=""><div class="d2l-menu-items d2l-hierarchical-view-content style-scope d2l-menu"><d2l-menu-item-return role="menuitem" tabindex="0" arialabel="Returns to previous menu.  You are viewing Course Tools." text="Course Tools" class="style-scope d2l-menu d2l-menu-item-first"><d2l-icon icon="d2l-tier1:chevron-left" class="style-scope d2l-menu-item-return x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M9.39 15.51L4.38 10A1.524 1.524 0 0 1 4 9a1.474 1.474 0 0 1 .38-1l5.01-5.51a1.5 1.5 0 0 1 2.22 2.02L7.53 9l4.08 4.49a1.5 1.5 0 0 1-2.22 2.02z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span aria-hidden="" class="style-scope d2l-menu-item-return">Course Tools</span></d2l-menu-item-return><d2l-menu-item-link href="/d2l/lms/attendance/index.d2l?ou=285490" text="Attendance" aria-label="Attendance" role="menuitem" tabindex="-1" class=""><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/attendance/index.d2l?ou=285490">Attendance</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/le/userprogress/506656/285490/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0" text="User Progress" aria-label="User Progress" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/le/userprogress/506656/285490/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0">User Progress</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/classlist/classlist.d2l?ou=285490" text="Classlist" aria-label="Classlist" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/classlist/classlist.d2l?ou=285490">Classlist</a></d2l-menu-item-link><d2l-menu-item-link href="https://learn.sait.ca/d2l/le/calendar/%7BOrgUnitId%7D?ou=%7bOrgUnitId%7d" text="Calendar" aria-label="Calendar" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/le/calendar/%7BOrgUnitId%7D?ou=%7bOrgUnitId%7d">Calendar</a></d2l-menu-item-link><d2l-menu-item href="/d2l/lms/glossary/glossary.d2l?ou=285490" data-popup-height="600" data-popup-width="800" class="d2l-navigation-s-link-popup" text="Glossary" aria-label="Glossary" role="menuitem" tabindex="-1"><span class="style-scope d2l-menu-item">Glossary</span></d2l-menu-item><d2l-menu-item-link href="/d2l/lms/group/group_list.d2l?ou=285490" text="Groups" aria-label="Groups" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/group/group_list.d2l?ou=285490">Groups</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/locker/locker.d2l?ou=285490" text="My Files" aria-label="My Files" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/locker/locker.d2l?ou=285490">My Files</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/awards/285490/" text="Awards" aria-label="Awards" role="menuitem" tabindex="-1"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/awards/285490/">Awards</a></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/survey/surveys.d2l?ou=285490" text="Survey" aria-label="Survey" role="menuitem" tabindex="-1" class="d2l-menu-item-last"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lms/survey/surveys.d2l?ou=285490">Survey</a></d2l-menu-item-link></div></d2l-menu><d2l-icon icon="d2l-tier1:chevron-right" class="style-scope d2l-menu-item x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M5.49 15.61a1.5 1.5 0 0 1-.1-2.12L9.47 9 5.39 4.51a1.5 1.5 0 1 1 2.22-2.02L12.62 8A1.474 1.474 0 0 1 13 9a1.524 1.524 0 0 1-.38 1l-5.01 5.51a1.5 1.5 0 0 1-2.12.1z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></d2l-menu-item><d2l-menu-item href="http://www.sait.ca/student-life/reg-erhardt-library/reg-erhardt-library" data-popup-menubar="1" data-popup-toolbar="1" class="d2l-navigation-s-link-popup" text="SAIT Library" aria-label="SAIT Library" role="menuitem" tabindex="-1"><span class="style-scope d2l-menu-item">SAIT Library</span></d2l-menu-item><d2l-menu-item-link href="/d2l/lp/cmc/main.d2l?ou=285490" text="Edit Course" aria-label="Edit Course" role="menuitem" tabindex="-1" class="d2l-menu-item-last"><a tabindex="-1" class="style-scope d2l-menu-item-link" href="https://learn.sait.ca/d2l/lp/cmc/main.d2l?ou=285490">Edit Course</a></d2l-menu-item-link></div></d2l-menu></div></div><div class="d2l-navigation-s-mobile-menu-focus-trap-end d2l-offscreen" tabindex="0">Menu End</div></div><div class="d2l-navigation-shadow-drop-border style-scope d2l-navigation"></div><div class="d2l-navigation-shadow-gradient style-scope d2l-navigation"></div></d2l-navigation></nav></header><span class="d2l-fragment"><a name="d2l_1_10_391" tabindex="-1"></a></span>
+		<div class="d2l-page-message-container"><div class="d2l-page-message d2l_1_12_301" id="d2l_sessionExpiryWarning"><div style="display:none;" id="d2l_sessionExpiryAlert" role="alert"><div class="d2l-container-icon d2l_1_13_821 d2l_1_14_726">
+			<div class="d2l-container-icon-inner d2l_1_15_830 d2l_1_16_264 d2l_1_17_65 d2l_1_18_306">
+				<h2 class="d2l-heading vui-heading-2">Are You Still There?</h2>
+				<div class="d2l-textblock">Your session expires after 120 minutes of inactivity, which protects your information in case you've left your device without logging out.<br>
+<br>
+<strong>Hit a key or click anywhere to stay logged in.</strong></div>
+			</div>
+		</div>
+		</div><div style="display:none;" id="d2l_sessionExpiryCheck" role="alert"><div class="d2l-container-icon d2l_1_13_821 d2l_1_14_726">
+			<div class="d2l-container-icon-inner d2l_1_19_170 d2l_1_16_264 d2l_1_17_65 d2l_1_18_306">
+				<div class="d2l_1_20_535">
+					<h2 class="d2l-heading vui-heading-2 d2l-heading-none">Oh, There You Are!</h2>
+				</div>
+			</div>
+		</div>
+		</div></div>
+		</div>
+		<div class="d2l-page-bg">
+			<div>
+			</div>
+		</div>
+		<div class="d2l-page-main d2l-min-width d2l-max-width" role="main">
+			<div class="d2l-page-collapsepane-container" style="min-height: 766px; top: 154px;"><div class="d2l-page-collapsepane-shadow" title="Expand side panel"><div></div></div><div class="d2l-page-collapsepane" data-openfirst="D2L.O(&quot;__g1&quot;,4)();"><span tabindex="-1" class="d2l-offscreen"></span><div class="d2l-page-collapsepane-handle"><h2 class="d2l-heading vui-offscreen">Side Panel</h2>
+			<a class="d2l-page-collapsepane-handle-link" tabindex="0" title="Expand side panel" role="button"><span class="d2l-page-collapsepane-handle-expand d2l-offscreen">Expand side panel</span><span class="d2l-page-collapsepane-handle-collapse d2l-offscreen">Collapse side panel</span></a></div><div class="d2l-page-collapsepane-content"><div class="d2l-page-collapsepane-content-inner d2l-scrollbar" style="max-height: 742px;"><div class="d2l-page-collapsepane-content-padding"><div id="ContentNavigator" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+				<div class="d2l-loading"><d2l-loading-spinner size="120" class="x-scope d2l-loading-spinner-0"><div class="d2l-loading-spinner-wrapper style-scope d2l-loading-spinner"><svg viewBox="0 0 42 42" class="d2l-loading-spinner-bg-blur style-scope d2l-loading-spinner" focusable="false"><g fill="none" fill-rule="evenodd" transform="translate(5 5)" class="style-scope d2l-loading-spinner"><circle stroke="none" fill="#000" cx="16" cy="16" r="14" class="style-scope d2l-loading-spinner"></circle></g></svg><svg viewBox="0 0 42 42" class="d2l-loading-spinner-bg style-scope d2l-loading-spinner" focusable="false"><g fill="none" fill-rule="evenodd" transform="translate(5 5)" class="style-scope d2l-loading-spinner"><circle stroke-width="0.5" cx="16" cy="16" r="16" class="d2l-loading-spinner-bg-stroke style-scope d2l-loading-spinner"></circle><circle stroke="none" fill="#FFF" cx="16" cy="16" r="16" class="style-scope d2l-loading-spinner"></circle><circle stroke-width="2" cx="16" cy="16" r="11" class="style-scope d2l-loading-spinner"></circle></g></svg><svg viewBox="0 0 42 42" class="d2l-loading-spinner-slice1 style-scope d2l-loading-spinner" focusable="false"><g fill="none" fill-rule="evenodd" class="style-scope d2l-loading-spinner"><path d="M24 42h8c0-17.673-14.327-32-32-32v8c1.105 0 2 .895 2 2s-.895 2-2 2v20h20c0-1.105.895-2 2-2s2 .895 2 2z" fill="#FFF" class="style-scope d2l-loading-spinner"></path><path d="M0 22c1.105 0 2-.895 2-2s-.895-2-2-2c13.255 0 24 10.745 24 24 0-1.105-.895-2-2-2s-2 .895-2 2c0-11.046-8.954-20-20-20z" fill="#E6EAF0" class="style-scope d2l-loading-spinner"></path></g></svg><svg viewBox="0 0 42 42" class="d2l-loading-spinner-slice2 style-scope d2l-loading-spinner" focusable="false"><g fill="none" fill-rule="evenodd" class="style-scope d2l-loading-spinner"><path d="M24 42h8c0-17.673-14.327-32-32-32v8c1.105 0 2 .895 2 2s-.895 2-2 2v20h20c0-1.105.895-2 2-2s2 .895 2 2z" fill="#FFF" class="style-scope d2l-loading-spinner"></path><path d="M0 22c1.105 0 2-.895 2-2s-.895-2-2-2c13.255 0 24 10.745 24 24 0-1.105-.895-2-2-2s-2 .895-2 2c0-11.046-8.954-20-20-20z" fill="#E6EAF0" class="style-scope d2l-loading-spinner"></path></g></svg><svg viewBox="0 0 42 42" class="d2l-loading-spinner-slice3 style-scope d2l-loading-spinner" focusable="false"><g fill="none" fill-rule="evenodd" class="style-scope d2l-loading-spinner"><path d="M24 42h8c0-17.673-14.327-32-32-32v8c1.105 0 2 .895 2 2s-.895 2-2 2v20h20c0-1.105.895-2 2-2s2 .895 2 2z" fill="#FFF" class="style-scope d2l-loading-spinner"></path><path d="M0 22c1.105 0 2-.895 2-2s-.895-2-2-2c13.255 0 24 10.745 24 24 0-1.105-.895-2-2-2s-2 .895-2 2c0-11.046-8.954-20-20-20z" fill="#E6EAF0" class="style-scope d2l-loading-spinner"></path></g></svg><svg viewBox="0 0 42 42" class="d2l-loading-spinner-slice4 style-scope d2l-loading-spinner" focusable="false"><g fill="none" fill-rule="evenodd" class="style-scope d2l-loading-spinner"><path d="M24 42h8c0-17.673-14.327-32-32-32v8c1.105 0 2 .895 2 2s-.895 2-2 2v20h20c0-1.105.895-2 2-2s2 .895 2 2z" fill="#FFF" class="style-scope d2l-loading-spinner"></path><path d="M0 22c1.105 0 2-.895 2-2s-.895-2-2-2c13.255 0 24 10.745 24 24 0-1.105-.895-2-2-2s-2 .895-2 2c0-11.046-8.954-20-20-20z" fill="#E6EAF0" class="style-scope d2l-loading-spinner"></path></g></svg><svg viewBox="0 0 42 42" class="d2l-loading-spinner-slice5 style-scope d2l-loading-spinner" focusable="false"><g fill="none" fill-rule="evenodd" class="style-scope d2l-loading-spinner"><path d="M24 42h8c0-17.673-14.327-32-32-32v8c1.105 0 2 .895 2 2s-.895 2-2 2v20h20c0-1.105.895-2 2-2s2 .895 2 2z" fill="#FFF" class="style-scope d2l-loading-spinner"></path><path d="M0 22c1.105 0 2-.895 2-2s-.895-2-2-2c13.255 0 24 10.745 24 24 0-1.105-.895-2-2-2s-2 .895-2 2c0-11.046-8.954-20-20-20z" fill="#E6EAF0" class="style-scope d2l-loading-spinner"></path></g></svg></div></d2l-loading-spinner><div class="d2l-textblock d2l-offscreen">Loading...</div>
+				</div>
+			</div>
+			</div></div></div><div class="d2l-page-collapsepane-end"></div><span tabindex="-1" class="d2l-offscreen"></span></div></div><div class="d2l-page-main-padding">
+				<div class="d2l-page-header d2l-header-responsive-collapse-layout">
+					<div class="d2l-box-layout d2l_1_22_530">
+						<div class="d2l-box d2l-box-v d2l-header-top d2l_1_23_214">
+							<div class="d2l-box-layout d2l_1_22_530">
+								<div class="d2l-box d2l-box-h d2l_1_24_583 d2l_1_23_214">
+									<nav aria-labelledby="d2l_1_25_441">
+										<h2 class="d2l-heading vui-offscreen" id="d2l_1_25_441">Breadcrumb:</h2>
+										<ol class="vui-breadcrumbs d2l_1_26_33 d2l_1_27_833" aria-labelledby="d2l_1_25_441">
+											<li><a class="d2l-link" href="javascript:void(0);" onclick="D2L.O(&quot;__g1&quot;,5)();return false;">Table of Contents</a>
+											</li><li><a class="d2l-link" href="https://learn.sait.ca/d2l/le/content/285490/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-7199019">Content</a>
+											</li><li class="d2l-page-breadcrumb-title"><span class="d2l-breadcrumb-text">CPRG-210-Days1-3</span></li></ol>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="d2l-box d2l-box-v d2l-header-bottom-box-responsive d2l_1_23_214">
+							<div class="d2l-box-layout d2l_1_22_530">
+								<div class="d2l-box d2l-box-h d2l_1_24_583 d2l_1_23_214">
+									<div class="d2l-page-title-c"><div class="d2l-box-layout d2l_1_28_596">
+										<div class="d2l-box d2l-box-h d2l_1_24_583 d2l_1_23_214">
+											<h1 class="d2l-page-title d2l-heading vui-heading-1 bsi-set-solid">CPRG-210-Days1-3</h1>
+											<div id="d2l_1_29_480" class="d2l-floating-container d2l-hidden vui-dropdown-menu d2l-floating-container-autoclose">
+												<template id="d2l_pageTitleActions" class="d2l-contextmenu-template" data-floatingcontainerid="d2l_1_29_480" data-dropdowncontentid="d2l_1_30_303"></template>
+											</div><d2l-dropdown id="d2l_1_0_8" class="d2l-contextmenu-ph d2l-contextmenu-ph-dropdown" data-contextmenuid="d2l_pageTitleActions" data-placeholderkey="d2l_1_34_382" data-openerid="d2l_1_35_392"><d2l-button-icon text="Actions for &#39;CPRG-210-Days1-3&#39;" icon="d2l-tier1:chevron-down" id="d2l_1_35_392" class="d2l-dropdown-opener x-scope d2l-button-icon-0" aria-haspopup="true" aria-expanded="false"><button class="d2l-focusable style-scope d2l-button-icon" title="Actions for &#39;CPRG-210-Days1-3&#39;" aria-haspopup="true" aria-expanded="false"><d2l-icon class="d2l-button-icon style-scope x-scope d2l-icon-0" icon="d2l-tier1:chevron-down"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M2.39 6.49a1.5 1.5 0 0 1 2.12-.1L9 10.47l4.49-4.08a1.5 1.5 0 0 1 2.02 2.22L10 13.62A1.474 1.474 0 0 1 9 14a1.523 1.523 0 0 1-1-.38L2.49 8.61a1.5 1.5 0 0 1-.1-2.12z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></button></d2l-button-icon></d2l-dropdown>
+										<div class="d2l-clear"></div>
+										<div class="d2l-page-title-view"><h2 class="d2l-heading vui-offscreen">PDF document</h2>
+										</div></div>
+								</div>
+								</div></div>
+							<div class="d2l-box d2l-box-h d2l_1_23_214">
+								<div class="d2l-page-header-side">
+									<div class="d2l_1_36_302 d2l-inline">
+										<span class="d2l-toggle" id="d2l_1_37_54" tabindex="-1"><a class="d2l-imagelink" id="d2l_1_38_730" href="javascript:void(0);" onclick="return false;" title="Add Bookmark" aria-label="Add Bookmark" role="button"><d2l-icon icon="d2l-tier2:bookmark-hollow" class="x-scope d2l-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M17-.01H7.01c-1.65 0-3 1.35-3 3L4 22c0 .74.41 1.42 1.06 1.76.29.16.62.24.94.24.39 0 .77-.11 1.11-.34L12 20.4l4.89 3.26c.34.23.72.34 1.11.34.32 0 .65-.08.94-.24.65-.34 1.06-1.02 1.06-1.76V2.99c0-1.65-1.35-3-3-3zM18 22s-5.45-3.63-5.46-3.63c-.16-.1-.34-.16-.54-.16-.19 0-.37.05-.52.15C11.47 18.36 6 22 6 22l.01-19.01c0-.54.46-1 1-1H17c.54 0 1 .46 1 1V22z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></a>
+										<a class="d2l-imagelink d2l-hidden" id="d2l_1_39_492" href="javascript:void(0);" onclick="return false;" title="Remove Bookmark" aria-label="Remove Bookmark" role="button"><d2l-icon icon="d2l-tier2:bookmark-filled" class="x-scope d2l-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M17 0H7.01a3.008 3.008 0 0 0-3 3L4 22a1.986 1.986 0 0 0 1.06 1.76 1.973 1.973 0 0 0 2.05-.1L12 20.4l4.89 3.26a1.973 1.973 0 0 0 2.05.1A1.986 1.986 0 0 0 20 22V3a3.008 3.008 0 0 0-3-3z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></a>
+										</span></div>
+									<a class="d2l-imagelink" id="d2l_1_40_602" href="javascript:void(0);" onclick="return false;" title="View content in new window" aria-label="View content in new window" role="button"><d2l-icon icon="d2l-tier1:fullscreen" class="x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope d2l-icon"><path d="M7.707 11.626l-3.29 3.265 1.29 1.282a1 1 0 0 1-.71 1.7H1a1 1 0 0 1-1-.993v-3.97a.98.98 0 0 1 .62-.914 1.006 1.006 0 0 1 1.09.208L3 13.48l3.29-3.264a1.012 1.012 0 0 1 1.418 0 .994.994 0 0 1 0 1.41zM10.293 11.625l3.29 3.265-1.29 1.28a1 1 0 0 0 .71 1.7h4a1 1 0 0 0 1-.992v-3.97a.98.98 0 0 0-.62-.913 1.006 1.006 0 0 0-1.09.208L15 13.48l-3.29-3.264a1.012 1.012 0 0 0-1.418 0 .992.992 0 0 0 0 1.41zM10.293 6.242l3.29-3.264-1.29-1.278a.99.99 0 0 1-.21-1.082A.987.987 0 0 1 13 0h4a1 1 0 0 1 1 .993v3.97a.98.98 0 0 1-.62.912 1.006 1.006 0 0 1-1.09-.208L15 4.387 11.712 7.65a1.012 1.012 0 0 1-1.42 0 .992.992 0 0 1 0-1.408zM7.707 6.242L4.42 2.977 5.71 1.7A1 1 0 0 0 5 0H1a1 1 0 0 0-1 .993v3.97a.98.98 0 0 0 .62.913 1.006 1.006 0 0 0 1.09-.208L3 4.388 6.288 7.65a1.012 1.012 0 0 0 1.42 0 .994.994 0 0 0 0-1.41zM11.8 20.93a.818.818 0 0 1 .07-.128.714.714 0 0 0-.09.2.183.183 0 0 1 .02-.07zM12.01 20.613c.01-.01.02-.01.03-.02a.644.644 0 0 0-.08.09.178.178 0 0 1 .05-.07z" class="style-scope d2l-icon"></path><path d="M11.8 20.93a.818.818 0 0 1 .07-.128.714.714 0 0 0-.09.2.183.183 0 0 1 .02-.07zM12.04 20.593a.644.644 0 0 0-.08.09.178.178 0 0 1 .05-.07c.01-.013.02-.013.03-.02z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></a>
+									<div class="d2l_1_41_90 d2l-inline">
+										<div class="d2l-iterator">
+											<a class="d2l-iterator-button d2l-iterator-button-prev d2l-iterator-button-notext" role="button" href="https://learn.sait.ca/d2l/le/content/285490/navigateContent/2/Previous?pId=7199019" title="Previous "><d2l-icon icon="d2l-tier1:chevron-left" class="x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M9.39 15.51L4.38 10A1.524 1.524 0 0 1 4 9a1.474 1.474 0 0 1 .38-1l5.01-5.51a1.5 1.5 0 0 1 2.22 2.02L7.53 9l4.08 4.49a1.5 1.5 0 0 1-2.22 2.02z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span class="d2l-offscreen">Previous </span>&nbsp;</a><a class="d2l-iterator-button d2l-iterator-button-next d2l-iterator-button-notext" role="button" href="https://learn.sait.ca/d2l/le/content/285490/navigateContent/2/Next?pId=7199019" title="Next "><span class="d2l-offscreen">Next </span>&nbsp;<d2l-icon icon="d2l-tier1:chevron-right" class="x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M5.49 15.61a1.5 1.5 0 0 1-.1-2.12L9.47 9 5.39 4.51a1.5 1.5 0 1 1 2.22-2.02L12.62 8A1.474 1.474 0 0 1 13 9a1.524 1.524 0 0 1-.38 1l-5.01 5.51a1.5 1.5 0 0 1-2.12.1z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d2l-messagearea d2l_1_42_336" id="d2l_messagearea" role="alert" tabindex="0"></div><div id="ContentView" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+				<div id="d2l_le_content_printcontainer">
+					<div class="d2l-fileviewer"><div class="d2l-fileviewer-pdf-pdfjs" id="d2l_1_44_42" data-location="/content/enforced/285490-32788.201803/CPRG-210-Days1-3.pdf?d2lSessionVal=2WgFcF4TRN4YIZpQ8x9ei8X64&amp;ou=285490" data-title="CPRG-210-Days1-3.pdf" data-culture="en" data-is-always-fully-expanded="0"><div id="d2l_1_43_525" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+						</div>
+						<iframe class="d2l-fileviewer-rendered-pdf" scrolling="no" seamless="seamless" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/viewer.html" title="CPRG-210-Days1-3.pdf" style="width: 100%; height: 920px;"></iframe></div></div>
+				</div>
+			</div>
+			<div class="d2l_1_45_111">
+				<div class="d2l_1_46_395">
+					<button class="d2l-button" id="d2l_1_2_262"><span class="d2l-icon-custom d2l_1_47_186"></span>Reflect in ePortfolio</button><button class="d2l-button" id="d2l_1_3_720"><span class="d2l-icon-custom d2l_1_48_60"></span>Download</button><button class="d2l-button d2l-hidden" id="d2l_1_4_676"><span class="d2l-icon-custom d2l_1_49_926"></span>Print</button><button class="d2l-button" id="d2l_1_5_893"><span class="d2l-icon-custom d2l_1_50_892"></span>Open with docReader</button></div>
+				<div class="d2l_1_51_433">
+					<div class="d2l_1_41_90 d2l-inline">
+						<div class="d2l-iterator">
+							<a class="d2l-iterator-button d2l-iterator-button-prev d2l-iterator-button-notext" role="button" href="https://learn.sait.ca/d2l/le/content/285490/navigateContent/2/Previous?pId=7199019" title="Previous "><d2l-icon icon="d2l-tier1:chevron-left" class="x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M9.39 15.51L4.38 10A1.524 1.524 0 0 1 4 9a1.474 1.474 0 0 1 .38-1l5.01-5.51a1.5 1.5 0 0 1 2.22 2.02L7.53 9l4.08 4.49a1.5 1.5 0 0 1-2.22 2.02z" class="style-scope d2l-icon"></path></g></svg></d2l-icon><span class="d2l-offscreen">Previous </span>&nbsp;</a><a class="d2l-iterator-button d2l-iterator-button-next d2l-iterator-button-notext" role="button" href="https://learn.sait.ca/d2l/le/content/285490/navigateContent/2/Next?pId=7199019" title="Next "><span class="d2l-offscreen">Next </span>&nbsp;<d2l-icon icon="d2l-tier1:chevron-right" class="x-scope d2l-icon-0"><svg viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope d2l-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="true" class="style-scope d2l-icon"><path d="M5.49 15.61a1.5 1.5 0 0 1-.1-2.12L9.47 9 5.39 4.51a1.5 1.5 0 1 1 2.22-2.02L12.62 8A1.474 1.474 0 0 1 13 9a1.524 1.524 0 0 1-.38 1l-5.01 5.51a1.5 1.5 0 0 1-2.12.1z" class="style-scope d2l-icon"></path></g></svg></d2l-icon></a></div>
+					</div>
+				</div>
+				<div class="d2l-clear"></div>
+			</div>
+			<div class="d2l_1_52_985">
+				<div id="AdditionalInfoPlaceholder" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+					<ul class="vui-tabmenu" role="tablist" id="d2l_1_53_926">
+						<li class="vui-tabmenu-item vui-tabmenu-item-select" role="presentation" style="width: 100%;">
+							<a id="d2l_1_54_76" href="javascript:void(0);" role="tab" aria-selected="true" tabindex="0" data-tabmenu-onclick="D2L.O(&quot;__g1&quot;,13)();">
+								Activity Details<span class="vui-tabmenu-item-blue">
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="d2l_1_55_555 d2l_1_56_466">
+					<div id="ActivityDetailsTabId">
+						<div class="d2l-box-layout d2l_1_22_530">
+							<div class="d2l-box d2l-box-h d2l_1_24_583 d2l_1_23_214">
+								<div class="d2l_1_57_47">
+									<div class=" d2l-inline">
+										<div id="d2l_1_6_66" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+											<form data-method="post" data-scope="" class="d2l-form d2l-form-primary" id="CompletionTaskForm" onsubmit="return false;">
+												<div class=" d2l-inline">
+													<div class="d2l-container-icon d2l_1_13_821 d2l_1_58_137 d2l_1_13_821 d2l_1_59_234 d2l_1_60_859">
+														<div class="d2l-textblock vui-emphasis">You have viewed this topic</div>
+													</div>
+												</div>
+												<div class=" d2l-inline">
+												</div>
+											<input type="text" class="d2l-hidden"></form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" d2l-hidden" id="ResultsDetailsTabId">
+						<div id="ResultDetails" class="d2l-placeholder d2l-placeholder-inner d2l-placeholder-live" aria-live="assertive">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="StatusPlaceholder" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+				<div class="d2l-textblock d2l-textblock-secondary vui-emphasis">Last Visited Jan 18, 2019 1:52 PM</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/jquery.min.js.download"></script>
+		<script type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/jquery-ui.min.js.download"></script>
+		<script type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/bsi.min.js.download"></script>
+		<script type="text/javascript">
+		//<![CDATA[
+			window.__ttiOnload = function() {ttiPolyfill.getFirstConsistentlyInteractive().then(function(tti) {if (tti) {document.dispatchEvent(new CustomEvent('d2l-performance-measure', {bubbles: true,detail: { name: 'd2l.page.tti', value: {name: 'd2l.page.tti', entryType: 'tti-polyfill', duration: tti, startTime: 0} }}));}});};
+		//]]>
+		</script>
+		<script async="async" onload="window.__ttiOnload()" type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/tti-polyfill-global.js.download"></script>
+		<script type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/D2L.LP.Web.Desktop.default.js.download"></script>
+		<script type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/D2L.LE.Content.ContentViewer.default.js.download"></script>
+		<script type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/D2L.LE.Content.Web.Desktop.default.js.download"></script>
+		<script type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/D2L.LE.ToolIntegration.Content.default.js.download"></script>
+		<script type="text/javascript">
+		//<![CDATA[
+			window['adrum-app-key'] = 'AD-AAB-AAM-YFB';window['adrum-ext-url'] = 'https://s.brightspace.com/lib/adrum-ext/4.2.10-0/adrum-ext.js';window['adrum-xd-url'] = '';window['adrum-start-time'] = Date.now();
+			function addD2LDataToAdrum() {if( typeof ADRUM.command === 'function' ) {ADRUM.command('addUserData','isDaylightEnabled','True');ADRUM.command('addUserData','productVersion','10.8.9.14571');}}
+		//]]>
+		</script>
+		<script async="async" onload="addD2LDataToAdrum()" type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/adrum.js.download"></script>
+		<script type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/tock.min.js.download"></script>
+		<script type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/ifvisible.min.js.download"></script>
+		<script type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/d2l-nav-host-base.js.download"></script>
+		<script type="text/javascript" src="./CPRG-210-Days1-3 - CPRG-210-OSD - Web Application Development_files/d2l-nav-docked-host.js.download"></script>
+		<script type="text/javascript">
+		//<![CDATA[
+			D2L.LP.Web.UI.Events.OnInit.AddListener( function() {
+D2L.O("__g1",14)();
+D2L.O("__g1",15)();
+D2L.O("__g1",16)();
+D2L.O("__g1",17)();
+D2L.O("__g1",18)();
+D2L.O("__g1",19)();
+D2L.O("__g1",20)();
+D2L.O("__g1",21)();
+D2L.O("__g1",22)();
+} );
+
+			D2L.LP.Web.UI.Events.OnLoad.AddListener( function() {
+D2L.O("__g1",23)();
+D2L.O("__g1",24)();
+D2L.O("__g1",25)();
+} );
+
+			D2L.OR={
+"__g1":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.UXP.Profile.506656\"]}",
+"1":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.LP.Notification.Settings.285490\"]}",
+"2":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.UXP.Preferences.285490\"]}",
+"3":"{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.Logout\",\"P\":[\"\/d2l\/logout\"]}",
+"4":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"ContentNavigator\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"ContentNavigator\"},\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/viewobject\/7199020\/PartialNavigator?mId=7199019\"},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false}],\"D\":true},0,false,null],\"D\":true}",
+"5":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/Home?itemIdentifier=TOC\"}]}]}",
+"6":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_39_492\"},true]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_38_730\"},false]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_39_492\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/viewContent\/7199020\/ToggleBookmark?bookmarkStatus=1\"}],\"D\":true}]}",
+"7":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_38_730\"},true]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_39_492\"},false]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_38_730\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/viewContent\/7199020\/ToggleBookmark?bookmarkStatus=0\"}],\"D\":true}]}",
+"8":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"CPRG-210-Days1-3\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/fullscreen\/7199020\/View\"},1280,800,false,false]}",
+"9":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_2_262\"},{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/ep\/contentReflection\/{orgUnitId}\/{action}\/{id}\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"previewReflection\",\"orgUnitId\":285490,\"id\":{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_2_262\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/ep\/contentReflection\/285490\/CreateReflectionDialog?tag2=32788.201803&tag3=CPRG-210-Days1-3&tag1=Content\"}],\"D\":true}}]}],\"D\":true}",
+"10":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"CheckTopicFileJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/topics\/files\/download\/7199020\/CheckFileTopicInfo\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsBroken\"]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.InlineDialog\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_8\"},null,\"Error\",\"Unable to download. The file associated with this content topic cannot be found.\",\"\",\"OK\",\"\",\"Close this Dialog\",\"d2l-dialog-inline-body-alert\",true,false,false],\"D\":true},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsPackageable\"]},{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"DownloadProgressDialogResultJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_8\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/7199020\/startdownload\/InitiateTopicDownload?openerId=d2l_1_0_8\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.CompareNumber\",\"P\":[5,{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]},0]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/le\/content\/{orgUnitId}\/downloads\/{downloadType}\/{jobId}\/{action}\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"Download\",\"orgUnitId\":285490,\"downloadType\":\"Topic\",\"jobId\":{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]}}]}]},true,null],\"D\":true}]},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/topics\/files\/download\/7199020\/DirectFileTopicDownload\"}]}],\"D\":true}],\"D\":true}]}",
+"11":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.FileViewer.TryPrint\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_le_content_printcontainer\"}]}",
+"12":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/readspeaker\/docreader\/285490\/topic\/7199020\"}]}",
+"13":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"ActivityDetailsTabId\"},true]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"EvaluationSummaryTabId\"},false]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"ResultsDetailsTabId\"},false]}]}",
+"14":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.FloatingContainer.Init\"}",
+"15":"{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.Init\",\"P\":[\"506656\",120,5,{\"_type\":\"id\",\"Value\":\"d2l_sessionExpiryWarning\"},\"d2l_sessionExpiryAlert\",\"d2l_sessionExpiryCheck\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/extend\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isLogout=0&isUsernamePasswordLogin=1\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isLogout=1&isUsernamePasswordLogin=1\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.InlineDialog\",\"P\":[null,{\"_type\":\"id\",\"Value\":\"d2l_1_61_232\"},\"Warning\",\"New User Session\",\"The current user session has changed, so the links and content on this page may not behave as expected.\",\"OK\",\"\",\"Close this Dialog\",\"d2l-dialog-inline-body-warning\",true,false,false],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Inline.Abort\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_61_232\"}]}]}",
+"16":"{\"_type\":\"func\",\"N\":\"D2LMathML.DesktopInit\",\"P\":[\"https:\/\/s.brightspace.com\/lib\/mathjax\/2.6.1\/MathJax.js?config=MML_HTMLorMML\",\"https:\/\/s.brightspace.com\/lib\/mathjax\/2.6.1\/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2cSafe\"]}",
+"17":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"8C9KCC9TeU4jrnflVwbJuTl65zw54i8U\",2011378040]}",
+"18":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},480,\"alert_bucket_{0}\",\"ab_status_{0}\"]}",
+"19":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Common.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}",
+"20":"{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[0,{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[0],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]+))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]+))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"M\/d\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-CA\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2019,\"Month\":1,\"Day\":18,\"Hour\":13,\"Minute\":52,\"Second\":57}}]}",
+"21":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2fle%2fcontent%2f285490%2fviewContent%2f7199020%2fView&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Common.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}",
+"22":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/285490\/help\"}]}",
+"23":"{\"_type\":\"func\",\"N\":\"D2L.LE.ViewContent.ContentViewer.OnLoad\",\"P\":[285490,7199020,null,{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/viewContent\/7199020\/57ea00a5-ac36-47c9-844c-66526eae9b5f\/TrackViewing\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/viewContent\/7199020\/57ea00a5-ac36-47c9-844c-66526eae9b5f\/FinalizeView\"},0]}",
+"24":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_4_676\"},{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.FileViewer.IsPrintable\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_le_content_printcontainer\"}]}]}]}",
+"25":"{\"_type\":\"func\",\"N\":\"D2L.LE.ToolIntegration.Content.CompletionStatusChanged.Actions.RegisterHandler\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_6_66\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_6_66\"},\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/object\/7199020\/UpdateCompletion\"},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false}],\"D\":true},0,false,null],\"D\":true}]}"}
+,
+"ContentNavigator":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_31_788":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_8\"},{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/ep\/contentReflection\/{orgUnitId}\/{action}\/{id}\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"previewReflection\",\"orgUnitId\":285490,\"id\":{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_8\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/ep\/contentReflection\/285490\/CreateReflectionDialog?tag2=32788.201803&tag3=CPRG-210-Days1-3&tag1=Content\"}],\"D\":true}}]}],\"D\":true}"}
+,
+"d2l_1_32_412":{"0":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"CheckTopicFileJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/topics\/files\/download\/7199020\/CheckFileTopicInfo\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsBroken\"]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.InlineDialog\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_8\"},null,\"Error\",\"Unable to download. The file associated with this content topic cannot be found.\",\"\",\"OK\",\"\",\"Close this Dialog\",\"d2l-dialog-inline-body-alert\",true,false,false],\"D\":true},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsPackageable\"]},{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"DownloadProgressDialogResultJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_8\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/7199020\/startdownload\/InitiateTopicDownload?openerId=d2l_1_0_8\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.CompareNumber\",\"P\":[5,{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]},0]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/le\/content\/{orgUnitId}\/downloads\/{downloadType}\/{jobId}\/{action}\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"Download\",\"orgUnitId\":285490,\"downloadType\":\"Topic\",\"jobId\":{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]}}]}]},true,null],\"D\":true}]},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/285490\/topics\/files\/download\/7199020\/DirectFileTopicDownload\"}]}],\"D\":true}],\"D\":true}]}"}
+,
+"d2l_1_33_11":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/readspeaker\/docreader\/285490\/topic\/7199020\"}]}"}
+,
+"d2l_1_29_480":{"onClose":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.ContextMenu.OnCloseHandler\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_pageTitleActions\"}]}"}
+,
+"ContentView":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_43_525":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"AdditionalInfoPlaceholder":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_6_66":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"ResultDetails":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"StatusPlaceholder":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+
+};
+
+		//]]>
+		</script>
+	
+</body></html>

@@ -1,0 +1,65 @@
+body {
+    background-color: rgba(162, 194, 231, 0.9);
+    font-family: 'Josefin Sans', sans-serif;
+
+    background-color: rgba(162, 194, 231, 0.9);
+    background-image: url("image/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    margin-top: 18rem;
+    margin-left: 10rem;
+    left: 3rem;
+    box-sizing: content-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.highlight {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.address1 {
+    position: relative;
+    left: 110px;
+}
+
+a:link {
+    color: purple;
+}
+
+a:visited {
+    color: #db3c28;
+}
+
+a:hover,
+a:focus {
+    color: teal;
+}
+
+a:active {
+    color: blue;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: pink;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+}
