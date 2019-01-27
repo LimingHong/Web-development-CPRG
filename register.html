@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="register.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
@@ -11,26 +12,58 @@
 </head>
 
 <body>
+
     <h1>Register New Account</h1>
-    <form action="bouncer.php">
+
+
+    <form action="bouncer.php" method="POST" name="myform" id=myform onsubmit="return(validation());">
         <div class=register_form>
 
-            <label for="fullname">Fullname:</label><input type="text" id=fullname name="Fullname" ><br>
+            <label for="fullname">Fullname:</label><input type="text" id='fullname' name="fullname">
+            <p id="errorfullname" name="errorfullname" class="error" style="display:none;">Firstname Lastname</p><br>
 
-            <label for="email">Email:</label><input tpye="text" id='email' name="Fullname"><br>
+            <label for="email">Email:</label><input type="text" id='email' name="email">
+            <p id="errorEmail" class="error" style="display:none;"> email@yourmail.com</p><br>
 
-            <label for="account">Account:</label><input tpye="text" id='account' name="Account"><br>
-            <label for="passward">Password:</label><input type="password" id="passward" name="password"> <br>
-            <label for="repassward"> Repeat your Password:</label><input tpye="password" id="repassword" name="Repeat"><br>
+            <label for="account">Account:</label><input type="text" id='account' name="account">
+            <p id="errorAccount" class="error" style="display:none;">Please enter a valid account </p><br>
+
+            <label for="postcode">Postcode:</label><input type="text" id='postcode' name='postcode' pattern="^[A-Z]\d[A-Z] ?\d[A-Z]\d$">
+            <p id="errorPostcode" class="error" style="display:none;"> Please enter a Valid postcode in form of T0T0T0</p><br>
+
+            <label for="passward">Password:</label><input type="password" id="passward" name="password">
+            <p id="errorPassword" class="error" style="display:none;"> Please enter a Valid Password with at least 8
+                characters</p><br>
+
+            <label for="repassward"> Repeat your Password:</label><input type="password" id="repassword" name="Repeat">
+            <p id="errorfullname" name="errorfullname" class="error" style="display:none;">Firstname Lastname</p>
+            <p id="errorRepassword" class="error" style="display:none;"> Please enter your password again</p><br>
         </div>
-            <div class="checkbox"><label for="check"></label><input type="checkbox" id="check" name="check">
+
+
+        <div class="checkbox"><label for="check"></label><input type="checkbox" id="check" name="check">
+
             <p class="textcheckbox">I understand and agree to <a href=image/term.jpg>term & privacy</a> of the company</p>
-            
-        </div class="registerbutton"> 
-        <button class="register" type="Submit" id="register" name="register">Register</button><p>Already have an account? <a href=index.html>Sign in</a></p>
+                    </div class="registerbutton">
+                    <button class="register" type="Submit" id="register" name="register">Register</button>
+                    <button class="reset" type="reset" id="back" name="back">Reset</button>
+                    <p>Already have an account? <a href=index.html>Sign in</a></p>
+
         </div>
-        
+
+
+        <div class="errorbox" id="errorbox">
+
+            <p id="errorfullname1" class="error" style="display:none;">Enter your fullname before submit</p>
+            <p id="errorEmail1" class="error" style="display:none;">Enter your email before submit</p>
+            <p id="errorAccount1" class="error" style="display:none;">Enter your account before submit</p>
+            <p id="errorPostcode1" class="error" style="display:none;">Enter your postcode before submit</p>
+            <p id="errorPassword1" class="error" style="display:none;">Enter your password before submit</p>
+            <p id="errorRepassword1" class="error" style="display:none;">Enter your password again before submit</p>
+        </div>
+
     </form>
+    <script src=register.js></script>
 </body>
 
 </html>
